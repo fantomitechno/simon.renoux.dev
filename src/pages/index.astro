@@ -3,55 +3,67 @@ import GlobalLayout from "../layouts/GlobalLayout.astro";
 import PageHeader from "../components/PageHeader.astro";
 import Section from "../components/Section.astro";
 
-const birthDate = new Date('2004-09-18')
-const today = new Date()
-const dMonths = today.getUTCMonth() - birthDate.getUTCMonth()
-const dDays = today.getUTCDate() - birthDate.getUTCDate()
-const dYears = today.getUTCFullYear() - birthDate.getUTCFullYear()
-const age = dYears - +(dMonths < 0 || (dMonths === 0 && dDays < 0))
+const birthDate = new Date("2004-09-18");
+const today = new Date();
+const dMonths = today.getUTCMonth() - birthDate.getUTCMonth();
+const dDays = today.getUTCDate() - birthDate.getUTCDate();
+const dYears = today.getUTCFullYear() - birthDate.getUTCFullYear();
+const age = dYears - +(dMonths < 0 || (dMonths === 0 && dDays < 0));
 
 const descriptions = [
-	// foxboy who...
+  // foxboy who...
   "eats chocolate (too much)",
   "drink ice tea",
   "plays Minecraft",
   "creates random projects in the middle of the night",
   "is a CS student",
   "sleeps... sometimes",
-]
+];
 
-const description = descriptions[Math.random() * descriptions.length | 0]
+const description = descriptions[(Math.random() * descriptions.length) | 0];
 ---
 
 <GlobalLayout title="fantomitechno's website">
   <PageHeader>
-		Hello, I'm Simon R.
-		<Fragment slot='surname'>aka fantomitechno</Fragment>
-		<Fragment slot='subtitle'>foxboy who {description}</Fragment>
-	</PageHeader>
+    Hello, I'm Simon R.
+    <Fragment slot="surname">aka fantomitechno</Fragment>
+    <Fragment slot="subtitle">foxboy who {description}</Fragment>
+  </PageHeader>
   <main>
     <Section>
-      I'm a {age} yo student at Polytech Nantes. 
-      I mostly do backend stuff like API and bots, but I also do modding for Minecraft with the Quilt Loader.
-      But the most of my time is passed starting projects... never finishing them and repeating
+      I'm a {age} yo student at Polytech Nantes. I mostly do backend stuff like API
+      and bots, but I also do modding for Minecraft with the Quilt Loader. But the
+      most of my time is passed starting projects... never finishing them and repeating
     </Section>
     <Section title="Projects">
       I create random projects so I have... a lot of them
       <ul>
         <li>
-          <a href="https://modrinth.com/mod/bingo1utils" target="_blank">Bingo1Utils</a>, a minecraft Fabric mod created for a bingo datapack created by friends
+          <a>Bingo1Utils</a>, a minecraft Fabric mod created to preview a bingo
+          grid in game (private)
         </li>
         <li>
-          <a href="https://modrinth.com/mod/enderrelay" target="_blank">Ender Relay</a>, a minecraft Quilt mod implementing a proposition by Kenadian
+          <a href="https://modrinth.com/mod/enderrelay" target="_blank">
+            Ender Relay
+          </a>, a minecraft Quilt mod implementing a proposition by Kenadian
         </li>
         <li>
-          <a>ftb.tv</a>, my twitch bot to moderate my livestream and give usefull informations
+          <a>ftb.tv</a>, my twitch bot to moderate my livestream and give
+          usefull informations
         </li>
         <li>
-          <a href="https://english-blog.renoux.me" target="_blank">Time Voyagers</a>, a blog created for english classes with Astro (like this very website)
+          <a href="https://english-blog.renoux.dev" target="_blank">
+            Time Voyagers
+          </a>, a blog created for english classes with Astro (like this very
+          website)
         </li>
         <li>
-          and more on my <a href="https://github.com/fantomitechno?tab=repositories" target="_blank">github page</a> and multiple github organizations I'm part of
+          and more on my <a
+            href="https://github.com/fantomitechno?tab=repositories"
+            target="_blank"
+          >
+            github page
+          </a> and multiple github organizations I'm part of
         </li>
       </ul>
     </Section>
