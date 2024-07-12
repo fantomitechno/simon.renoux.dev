@@ -1,31 +1,26 @@
 <script>
-	import Counter from './Counter.svelte';
-	import welcome from '$lib/images/svelte-welcome.webp';
-	import welcome_fallback from '$lib/images/svelte-welcome.png';
+	const descriptions = [
+		// foxboy who...
+		'eats chocolate (too much)',
+		'drink ice tea',
+		'plays Minecraft',
+		'creates random projects in the middle of the night',
+		'is a CS student',
+		'sleeps... sometimes'
+	];
+
+	const description = descriptions[(Math.random() * descriptions.length) | 0];
 </script>
 
 <svelte:head>
-	<title>Home</title>
-	<meta name="description" content="Svelte demo app" />
+	<title>Simon[dot]Renoux[dot]Dev</title>
+	<meta name="description" content="Simon's homepage" />
 </svelte:head>
 
 <section>
-	<h1>
-		<span class="welcome">
-			<picture>
-				<source srcset={welcome} type="image/webp" />
-				<img src={welcome_fallback} alt="Welcome" />
-			</picture>
-		</span>
-
-		to your new<br />SvelteKit app
-	</h1>
-
-	<h2>
-		try editing <strong>src/routes/+page.svelte</strong>
-	</h2>
-
-	<Counter />
+	<h1>Hi, I'm Simon R.</h1>
+	<h2>aka fantomitechno</h2>
+	a foxboy who {description}
 </section>
 
 <style>
@@ -38,22 +33,10 @@
 	}
 
 	h1 {
-		width: 100%;
-	}
-
-	.welcome {
-		display: block;
-		position: relative;
-		width: 100%;
-		height: 0;
-		padding: 0 0 calc(100% * 495 / 2048) 0;
-	}
-
-	.welcome img {
-		position: absolute;
-		width: 100%;
-		height: 100%;
-		top: 0;
-		display: block;
+		background-image: linear-gradient(to right, #e2931d, #e2931d);
+		background-position: 0 1.18em;
+		background-repeat: repeat-x;
+		background-size: 100% 0.16em;
+		padding-bottom: 0.16em;
 	}
 </style>

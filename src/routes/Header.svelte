@@ -1,41 +1,36 @@
 <script>
 	import { page } from '$app/stores';
-	import logo from '$lib/images/svelte-logo.svg';
-	import github from '$lib/images/github.svg';
+	import me_girl from '$lib/images/me_girl.png';
 </script>
 
 <header>
 	<div class="corner">
-		<a href="https://kit.svelte.dev">
-			<img src={logo} alt="SvelteKit" />
+		<a href="/">
+			<img src={me_girl} alt="SvelteKit" />
+			Simon[dot]Renoux[dot]dev
 		</a>
 	</div>
 
 	<nav>
-		<svg viewBox="0 0 2 3" aria-hidden="true">
-			<path d="M0,0 L1,2 C1.5,3 1.5,3 2,3 L2,0 Z" />
-		</svg>
 		<ul>
-			<li aria-current={$page.url.pathname === '/' ? 'page' : undefined}>
-				<a href="/">Home</a>
+			<li>
+				<a aria-current={$page.url.pathname === '/about' ? 'page' : undefined} href="/about"
+					>About</a
+				>
 			</li>
-			<li aria-current={$page.url.pathname === '/about' ? 'page' : undefined}>
-				<a href="/about">About</a>
+			<li>
+				<a
+					aria-current={$page.url.pathname.startsWith('/projects') ? 'page' : undefined}
+					href="/projects">Projects</a
+				>
 			</li>
-			<li aria-current={$page.url.pathname.startsWith('/sverdle') ? 'page' : undefined}>
-				<a href="/sverdle">Sverdle</a>
+			<li>
+				<a aria-current={$page.url.pathname == '/links' ? 'page' : undefined} href="/links">
+					Links & Socials
+				</a>
 			</li>
 		</ul>
-		<svg viewBox="0 0 2 3" aria-hidden="true">
-			<path d="M0,0 L0,3 C0.5,3 0.5,3 1,2 L2,0 Z" />
-		</svg>
 	</nav>
-
-	<div class="corner">
-		<a href="https://github.com/sveltejs/kit">
-			<img src={github} alt="GitHub" />
-		</a>
-	</div>
 </header>
 
 <style>
@@ -45,38 +40,34 @@
 	}
 
 	.corner {
-		width: 3em;
-		height: 3em;
+		margin: 0.5em;
+		display: flex;
+		vertical-align: middle;
+		line-height: 3em;
+		justify-content: space-between;
 	}
 
-	.corner a {
+	.corner a,
+	.corner a:hover {
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		width: 100%;
-		height: 100%;
+		color: #000;
+		text-decoration: none;
 	}
 
 	.corner img {
-		width: 2em;
-		height: 2em;
+		width: 3em;
+		height: 3em;
 		object-fit: contain;
+		border-radius: 15%;
+		margin-right: 0.5em;
 	}
 
 	nav {
 		display: flex;
 		justify-content: center;
-		--background: rgba(255, 255, 255, 0.7);
-	}
-
-	svg {
-		width: 2em;
-		height: 3em;
-		display: block;
-	}
-
-	path {
-		fill: var(--background);
+		margin: 0.5em;
 	}
 
 	ul {
@@ -97,16 +88,8 @@
 		height: 100%;
 	}
 
-	li[aria-current='page']::before {
-		--size: 6px;
-		content: '';
-		width: 0;
-		height: 0;
-		position: absolute;
-		top: 0;
-		left: calc(50% - var(--size));
-		border: var(--size) solid transparent;
-		border-top: var(--size) solid var(--color-theme-1);
+	a[aria-current='page'] {
+		color: var(--color-theme-2);
 	}
 
 	nav a {
