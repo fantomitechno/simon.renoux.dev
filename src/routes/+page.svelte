@@ -13,7 +13,7 @@
 </script>
 
 <svelte:head>
-	<title>Simon[dot]Renoux[dot]Dev</title>
+	<title>simon.renoux.dev</title>
 	<meta name="description" content="Simon's homepage" />
 </svelte:head>
 

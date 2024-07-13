@@ -12,6 +12,8 @@
 <footer>
 	<span>
 		<a href="https://github.com/fantomitechno/site" target="_blank" rel="noreferrer"> source </a>
+		·
+		<a href="https://ko-fi.com/fantomitechno" target="_blank" rel="noreferrer"> money </a>
 	</span>
 	uwu · {quote} · uwu
 </footer>

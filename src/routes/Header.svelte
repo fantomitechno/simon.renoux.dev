@@ -7,22 +7,22 @@
 	<div class="corner">
 		<a href="/">
 			<img src={me_girl} alt="SvelteKit" />
-			Simon[dot]Renoux[dot]dev
+			Simon R.
 		</a>
 	</div>
 
 	<nav>
 		<ul>
 			<li>
-				<a aria-current={$page.url.pathname === '/about' ? 'page' : undefined} href="/about"
-					>About</a
-				>
+				<a aria-current={$page.url.pathname === '/' ? 'page' : undefined} href="/">About me </a>
 			</li>
 			<li>
 				<a
 					aria-current={$page.url.pathname.startsWith('/projects') ? 'page' : undefined}
-					href="/projects">Projects</a
+					href="/projects"
 				>
+					Projects
+				</a>
 			</li>
 			<li>
 				<a aria-current={$page.url.pathname == '/links' ? 'page' : undefined} href="/links">
@@ -98,9 +98,8 @@
 		align-items: center;
 		padding: 0 0.5rem;
 		color: var(--color-text);
-		font-weight: 700;
+		font-weight: 500;
 		font-size: 0.8rem;
-		text-transform: uppercase;
 		letter-spacing: 0.1em;
 		text-decoration: none;
 		transition: color 0.2s linear;
