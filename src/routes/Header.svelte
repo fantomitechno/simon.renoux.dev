@@ -17,6 +17,11 @@
 				<a aria-current={$page.url.pathname === '/' ? 'page' : undefined} href="/">About me </a>
 			</li>
 			<li>
+				<a aria-current={$page.url.pathname == '/gallery' ? 'page' : undefined} href="/gallery">
+					Art Gallery
+				</a>
+			</li>
+			<li>
 				<a
 					aria-current={$page.url.pathname.startsWith('/projects') ? 'page' : undefined}
 					href="/projects"
@@ -52,7 +57,7 @@
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		color: #000;
+		color: var(--color-text);
 		text-decoration: none;
 	}
 
@@ -99,7 +104,7 @@
 		padding: 0 0.5rem;
 		color: var(--color-text);
 		font-weight: 500;
-		font-size: 0.8rem;
+		font-size: 0.9rem;
 		letter-spacing: 0.1em;
 		text-decoration: none;
 		transition: color 0.2s linear;
