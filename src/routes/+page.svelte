@@ -1,6 +1,22 @@
 <script>
 	import fantom_maid from '$lib/images/fantom_maid.jpg';
 
+	import { Icon } from 'svelte-icons-pack';
+	import { RiLogosJavaFill } from 'svelte-icons-pack/ri';
+	import {
+		SiTypescript,
+		SiPython,
+		SiGo,
+		SiSvelte,
+		SiNodedotjs,
+		SiAstro,
+		SiVisualstudiocode,
+		SiIntellijidea,
+		SiGit,
+		SiPrisma,
+		SiEndeavouros
+	} from 'svelte-icons-pack/si';
+
 	const descriptions = [
 		// foxboy who...
 		'eats chocolate (too much)',
@@ -36,8 +52,97 @@
 				a foxboy who {description}
 			</div>
 		</diV>
-		I'm a {age} yo student in Polytech Nantes. I'm learning computer science but already started ahead
-		with a *few* projects
+		<p>
+			I'm a {age} yo student in Polytech Nantes. I'm learning computer science but already started ahead
+			with a *<i>few</i>* projects.
+		</p>
+		<p>
+			I mainly do backend stuff like API and bots, but I also do minecraft modding and web projects
+			(for example the website you're seeing right now :D)
+		</p>
+		<h1>I use a lot of the stuff below</h1>
+		<h2>Development tools</h2>
+		<span id="knowledge">
+			<a href="https://code.visualstudio.com/">
+				<figure>
+					<Icon src={SiVisualstudiocode} size="3em" className="icons" />
+					<figcaption>VSCode</figcaption>
+				</figure>
+			</a>
+			<a href="https://www.jetbrains.com/idea/">
+				<figure>
+					<Icon src={SiIntellijidea} size="3em" className="icons" />
+					<figcaption>Intellij Idea</figcaption>
+				</figure>
+			</a>
+			<a href="https://git-scm.com/">
+				<figure>
+					<Icon src={SiGit} size="3em" className="icons" />
+					<figcaption>Git</figcaption>
+				</figure>
+			</a>
+			<a href="https://endeavouros.com/">
+				<figure>
+					<Icon src={SiEndeavouros} size="3em" className="icons" />
+					<figcaption>Endeavour OS</figcaption>
+				</figure>
+			</a>
+		</span>
+		<h2>Languages</h2>
+		<span id="knowledge">
+			<a href="https://nodejs.org/">
+				<figure>
+					<Icon src={SiNodedotjs} size="3em" className="icons" />
+					<figcaption>Node.js</figcaption>
+				</figure>
+			</a>
+			<a href="https://www.python.org/">
+				<figure>
+					<Icon src={SiPython} size="3em" className="icons" />
+					<figcaption>Python</figcaption>
+				</figure>
+			</a>
+			<a href="https://www.java.com/">
+				<figure>
+					<Icon src={RiLogosJavaFill} size="3em" className="icons" />
+					<figcaption>Java</figcaption>
+				</figure>
+			</a>
+			<a href="https://go.dev/">
+				<figure>
+					<Icon src={SiGo} size="3em" className="icons" />
+					<figcaption>Go</figcaption>
+				</figure>
+			</a>
+		</span>
+		<h2>NodeJS stuff</h2>
+		<span id="knowledge">
+			<a href="https://www.typescriptlang.org/">
+				<figure>
+					<Icon src={SiTypescript} size="3em" className="icons" />
+					<figcaption>TypeScript</figcaption>
+				</figure>
+			</a>
+			<a href="https://astro.build/">
+				<figure>
+					<Icon src={SiAstro} size="3em" className="icons" />
+					<figcaption>Astro</figcaption>
+				</figure>
+			</a>
+			<a href="https://svelte.dev/">
+				<figure>
+					<Icon src={SiSvelte} size="3em" className="icons" />
+					<figcaption>Svelte</figcaption>
+				</figure>
+			</a>
+			<a href="https://www.prisma.io/">
+				<figure>
+					<Icon src={SiPrisma} size="3em" className="icons" />
+					<figcaption>Prisma</figcaption>
+				</figure>
+			</a>
+		</span>
+		See more on my <a href="/SimonRenoux.pdf">CV</a>
 	</span>
 </section>
 
@@ -62,6 +167,7 @@
 
 	span {
 		align-items: left;
+		width: 100%;
 	}
 
 	#presentation {
@@ -75,8 +181,25 @@
 		align-items: center;
 	}
 
-	img {
-		height: 5rem;
+	#presplusimage img {
+		max-height: 5rem;
 		border-radius: 15%;
+	}
+
+	#knowledge {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: first baseline;
+	}
+
+	#knowledge a {
+		text-decoration: none;
+		color: var(--text-color);
+	}
+
+	#knowledge figure {
+		margin: 1rem;
+		text-align: center;
+		width: 5rem;
 	}
 </style>
