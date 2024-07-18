@@ -94,14 +94,20 @@ button:focus:not(:focus-visible) {
   }
 }
 
-.visually-hidden {
-  border: 0;
-  clip: rect(0 0 0 0);
-  height: auto;
-  margin: 0;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  width: 1px;
-  white-space: nowrap;
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-bg-0: rgb(54, 51, 48);
+    --color-bg-1: hsl(43, 6%, 23%);
+    --color-bg-2: hsl(0, 0%, 11%);
+    --color-theme-1: #d06005;
+    --color-theme-2: #9a09ba;
+    --color-text: rgba(207, 207, 207, 0.9);
+  }
+
+  body {
+    background-image: radial-gradient(50% 50% at 50% 50%,
+        #202020 0%,
+        #202020 100%),
+      linear-gradient(180deg, var(--color-bg-0) 0%, var(--color-bg-1) 15%, var(--color-bg-2) 50%);
+  }
 }
