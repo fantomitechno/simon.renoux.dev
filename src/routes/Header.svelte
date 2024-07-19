@@ -29,11 +29,6 @@
 					Projects
 				</a>
 			</li>
-			<li>
-				<a aria-current={$page.url.pathname == '/links' ? 'page' : undefined} href="/links">
-					Links & Socials
-				</a>
-			</li>
 		</ul>
 	</nav>
 </header>
