@@ -6,7 +6,7 @@
 <header>
 	<div class="corner">
 		<a href="/">
-			<img src={me_girl} alt="SvelteKit" />
+			<img src={me_girl} alt="My OC as a girl" />
 			Simon R.
 		</a>
 	</div>
