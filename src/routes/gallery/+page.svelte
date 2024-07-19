@@ -63,25 +63,8 @@
 </section>
 
 <style>
-	section {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		flex: 0.6;
-	}
-
-	h1 {
-		text-align: left;
-		background-image: linear-gradient(to right, #e2931d, #e2931d);
-		background-position: 0 1.18em;
-		background-repeat: repeat-x;
-		display: inline-block;
-		background-size: 100% 0.16em;
-		padding-bottom: 0.16em;
-	}
-
 	span {
+		align-items: left;
 		width: 100%;
 	}
 
