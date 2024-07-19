@@ -1,5 +1,5 @@
 <script>
-	import ProjectList from './ProjectList.svelte';
+	import ProjectList from '../../ProjectList.svelte';
 
 	export let data;
 	$: projects = data.projects;
@@ -7,7 +7,7 @@
 
 <section>
 	<span>
-		<h1>My projects</h1>
+		<h1>Projects with the {data.slug} tag</h1>
 
 		<ProjectList {projects} />
 	</span>

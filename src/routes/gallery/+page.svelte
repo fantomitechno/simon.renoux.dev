@@ -70,6 +70,7 @@
 
 	img {
 		max-height: 12rem;
+		max-width: 40%;
 		margin: 0.3rem;
 		border-radius: 5%;
 	}

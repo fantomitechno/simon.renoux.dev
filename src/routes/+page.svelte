@@ -54,11 +54,11 @@
 	<span>
 		<diV id="presentation">
 			<img src={fantom_maid} alt="My character in a maid outfit by Liitchee" />
-			<div id="titles">
+			<hgroup id="titles">
 				<h1>Hi, I'm Simon R.</h1>
 				<h2>aka fantomitechno</h2>
 				a foxboy who {description}
-			</div>
+			</hgroup>
 		</diV>
 		<p>
 			I'm a {age} yo student in Polytech Nantes. I'm learning computer science but already started ahead

@@ -35,18 +35,6 @@
 	:global(section) {
 		display: flex;
 		flex-direction: column;
-		justify-content: center;
-		align-items: center;
 		flex: 0.6;
-	}
-
-	:global(h1) {
-		text-align: left;
-		background-image: linear-gradient(to right, var(--color-theme-2), var(--color-theme-2));
-		background-position: 0 1.18em;
-		background-repeat: repeat-x;
-		display: inline-block;
-		background-size: 100% 0.16em;
-		padding-bottom: 0.16em;
 	}
 </style>
