@@ -90,6 +90,10 @@
 
 	a[aria-current='page'] {
 		color: var(--color-theme-2);
+		text-decoration: underline;
+		text-underline-offset: 0.3rem;
+		text-decoration-color: var(--color-theme-1);
+		text-decoration-thickness: 0.1rem;
 	}
 
 	nav a {
