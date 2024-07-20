@@ -24,8 +24,8 @@
 					{/if}
 				</h1>
 
+				<p class="date">{formatDate(project.date)}</p>
 				<div class="meta">
-					<p class="date">{formatDate(project.date)}</p>
 					{#each project.categories as category}
 						<a class="tag" href={`/projects/tags/${category}`}>&num;{category}</a>
 					{/each}
@@ -61,7 +61,6 @@
 	}
 
 	.title {
-		text-transform: uppercase;
 		background-image: none;
 		padding: 0;
 		margin: 0;
@@ -76,6 +75,7 @@
 	.meta {
 		display: flex;
 		flex-direction: row;
+		flex-wrap: wrap;
 		gap: 0.3rem;
 		align-items: center;
 	}

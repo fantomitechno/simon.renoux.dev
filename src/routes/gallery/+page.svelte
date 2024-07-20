@@ -70,9 +70,13 @@
 
 	img {
 		max-height: 12rem;
-		max-width: 40%;
 		margin: 0.3rem;
 		border-radius: 5%;
+
+		@media (max-width: 720px) {
+			margin-left: auto;
+			margin-right: auto;
+		}
 	}
 
 	.art-gallery {

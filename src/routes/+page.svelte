@@ -20,7 +20,9 @@
 		SiDiscord,
 		SiX,
 		SiTwitch,
-		SiKofi
+		SiKofi,
+		SiPnpm,
+		SiPrettier
 	} from 'svelte-icons-pack/si';
 
 	import { GitGay } from '$lib/icons/custom';
@@ -69,7 +71,7 @@
 			(for example the website you're seeing right now :D)
 		</p>
 		<div class="informations">
-			<div>
+			<div id="knowledge-showcase">
 				<h1>I use a lot of the stuff below</h1>
 				<h2>Development tools</h2>
 				<span id="knowledge">
@@ -151,10 +153,22 @@
 							<figcaption>Prisma</figcaption>
 						</figure>
 					</a>
+					<a href="https://pnpm.io/">
+						<figure>
+							<Icon src={SiPnpm} size="3em" className="icons" />
+							<figcaption>pnpm</figcaption>
+						</figure>
+					</a>
+					<a href="https://prettier.io/">
+						<figure>
+							<Icon src={SiPrettier} size="3em" className="icons" />
+							<figcaption>Prettier</figcaption>
+						</figure>
+					</a>
 				</span>
 				See more on my <a href="/SimonRenoux.pdf">CV</a>
 			</div>
-			<div>
+			<div id="accounts-showcase">
 				<h1>I have accounts there</h1>
 				<h2>Development projects</h2>
 				<span id="accounts">
@@ -230,14 +244,30 @@
 		max-height: 5rem;
 	}
 
-	.informations::after {
-		display: table;
-		clear: both;
+	@media (min-width: 720px) {
+		.informations::after {
+			display: flex;
+		}
+
+		.informations > div {
+			float: left;
+			width: 50%;
+		}
 	}
 
-	.informations > div {
-		float: left;
-		width: 50%;
+	@media (max-width: 720px) {
+		.informations {
+			display: flex;
+			flex-direction: column;
+		}
+		div #accounts-showcase {
+			order: 1;
+			width: 100%;
+		}
+		div #knowledge-showcase {
+			order: 2;
+			width: 100%;
+		}
 	}
 
 	#knowledge {

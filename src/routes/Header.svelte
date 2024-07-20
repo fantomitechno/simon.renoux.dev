@@ -14,7 +14,9 @@
 	<nav>
 		<ul>
 			<li>
-				<a aria-current={$page.url.pathname === '/' ? 'page' : undefined} href="/">About me </a>
+				<a id="about" aria-current={$page.url.pathname === '/' ? 'page' : undefined} href="/"
+					>About me
+				</a>
 			</li>
 			<li>
 				<a aria-current={$page.url.pathname == '/gallery' ? 'page' : undefined} href="/gallery">
@@ -111,5 +113,11 @@
 
 	a:hover {
 		color: var(--color-theme-1);
+	}
+
+	@media (max-width: 720px) {
+		#about {
+			display: none;
+		}
 	}
 </style>
