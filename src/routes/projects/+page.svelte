@@ -5,6 +5,11 @@
 	$: projects = data.projects;
 </script>
 
+<svelte:head>
+	<title>Projects</title>
+	<meta name="description" content={`Project list`} />
+</svelte:head>
+
 <section>
 	<span>
 		<h1>My projects</h1>
