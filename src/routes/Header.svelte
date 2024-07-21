@@ -91,10 +91,10 @@
 	}
 
 	a[aria-current='page'] {
-		color: var(--color-theme-2);
+		color: var(--color-secondary);
 		text-decoration: underline;
 		text-underline-offset: 0.3rem;
-		text-decoration-color: var(--color-theme-1);
+		text-decoration-color: var(--color-primary);
 		text-decoration-thickness: 0.1rem;
 	}
 
@@ -112,7 +112,7 @@
 	}
 
 	a:hover {
-		color: var(--color-theme-1);
+		color: var(--color-primary);
 	}
 
 	@media (max-width: 720px) {

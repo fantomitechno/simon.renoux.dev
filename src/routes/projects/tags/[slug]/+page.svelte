@@ -26,6 +26,6 @@
 	}
 
 	h2 a {
-		color: var(--color-theme-2);
+		color: var(--color-secondary);
 	}
 </style>

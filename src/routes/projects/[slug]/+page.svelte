@@ -57,7 +57,7 @@
 	}
 
 	.tag {
-		color: var(--color-theme-2);
+		color: var(--color-secondary);
 		font-weight: auto;
 		text-transform: none;
 		margin-right: 0.25em;
@@ -71,7 +71,7 @@
 	}
 
 	.tag:hover {
-		box-shadow: inset 0 -1.5em 0 var(--color-theme-2);
+		box-shadow: inset 0 -1.5em 0 var(--color-secondary);
 		color: #fff;
 	}
 </style>

@@ -282,7 +282,7 @@
 	}
 
 	:global(.icons:hover) {
-		color: var(--color-theme-2) !important;
+		color: var(--color-secondary) !important;
 
 		:global(.red) {
 			fill: #fe9494;
