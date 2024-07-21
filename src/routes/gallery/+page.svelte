@@ -29,7 +29,11 @@
 		<h1>Art Gallery:</h1>
 		<br />
 		I'm not very good with doing art but I know people that are good at it
-		<h2>Commisions by <a href="https://artbysoleil.carrd.co/">Soleil</a></h2>
+		<h2>
+			Commisions by <a href="https://artbysoleil.carrd.co/" target="_blank" rel="noreferrer">
+				Soleil
+			</a>
+		</h2>
 		<div class="art-gallery">
 			<img src={fantom_main} alt="My OC in his normal outfit" />
 			<img src={fantom_maid} alt="My OC in a maid outfit" />

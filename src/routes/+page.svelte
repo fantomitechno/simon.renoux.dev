@@ -75,25 +75,25 @@
 				<h1>I use a lot of the stuff below</h1>
 				<h2>Development tools</h2>
 				<span id="knowledge">
-					<a href="https://code.visualstudio.com/">
+					<a href="https://code.visualstudio.com/" target="_blank" rel="noreferrer">
 						<figure>
 							<Icon src={SiVisualstudiocode} size="3em" className="icons" />
 							<figcaption>VSCode</figcaption>
 						</figure>
 					</a>
-					<a href="https://www.jetbrains.com/idea/">
+					<a href="https://www.jetbrains.com/idea/" target="_blank" rel="noreferrer">
 						<figure>
 							<Icon src={SiIntellijidea} size="3em" className="icons" />
 							<figcaption>Intellij Idea</figcaption>
 						</figure>
 					</a>
-					<a href="https://git-scm.com/">
+					<a href="https://git-scm.com/" target="_blank" rel="noreferrer">
 						<figure>
 							<Icon src={SiGit} size="3em" className="icons" />
 							<figcaption>Git</figcaption>
 						</figure>
 					</a>
-					<a href="https://endeavouros.com/">
+					<a href="https://endeavouros.com/" target="_blank" rel="noreferrer">
 						<figure>
 							<Icon src={SiEndeavouros} size="3em" className="icons" />
 							<figcaption>Endeavour OS</figcaption>
@@ -102,25 +102,25 @@
 				</span>
 				<h2>Languages</h2>
 				<span id="knowledge">
-					<a href="https://nodejs.org/">
+					<a href="https://nodejs.org/" target="_blank" rel="noreferrer">
 						<figure>
 							<Icon src={SiNodedotjs} size="3em" className="icons" />
 							<figcaption>Node.js</figcaption>
 						</figure>
 					</a>
-					<a href="https://www.python.org/">
+					<a href="https://www.python.org/" target="_blank" rel="noreferrer">
 						<figure>
 							<Icon src={SiPython} size="3em" className="icons" />
 							<figcaption>Python</figcaption>
 						</figure>
 					</a>
-					<a href="https://www.java.com/">
+					<a href="https://www.java.com/" target="_blank" rel="noreferrer">
 						<figure>
 							<Icon src={RiLogosJavaFill} size="3em" className="icons" />
 							<figcaption>Java</figcaption>
 						</figure>
 					</a>
-					<a href="https://go.dev/">
+					<a href="https://go.dev/" target="_blank" rel="noreferrer">
 						<figure>
 							<Icon src={SiGo} size="3em" className="icons" />
 							<figcaption>Go</figcaption>
@@ -129,62 +129,62 @@
 				</span>
 				<h2>NodeJS stuff</h2>
 				<span id="knowledge">
-					<a href="https://www.typescriptlang.org/">
+					<a href="https://www.typescriptlang.org/" target="_blank" rel="noreferrer">
 						<figure>
 							<Icon src={SiTypescript} size="3em" className="icons" />
 							<figcaption>TypeScript</figcaption>
 						</figure>
 					</a>
-					<a href="https://astro.build/">
+					<a href="https://astro.build/" target="_blank" rel="noreferrer">
 						<figure>
 							<Icon src={SiAstro} size="3em" className="icons" />
 							<figcaption>Astro</figcaption>
 						</figure>
 					</a>
-					<a href="https://svelte.dev/">
+					<a href="https://svelte.dev/" target="_blank" rel="noreferrer">
 						<figure>
 							<Icon src={SiSvelte} size="3em" className="icons" />
 							<figcaption>Svelte</figcaption>
 						</figure>
 					</a>
-					<a href="https://www.prisma.io/">
+					<a href="https://www.prisma.io/" target="_blank" rel="noreferrer">
 						<figure>
 							<Icon src={SiPrisma} size="3em" className="icons" />
 							<figcaption>Prisma</figcaption>
 						</figure>
 					</a>
-					<a href="https://pnpm.io/">
+					<a href="https://pnpm.io/" target="_blank" rel="noreferrer">
 						<figure>
 							<Icon src={SiPnpm} size="3em" className="icons" />
 							<figcaption>pnpm</figcaption>
 						</figure>
 					</a>
-					<a href="https://prettier.io/">
+					<a href="https://prettier.io/" target="_blank" rel="noreferrer">
 						<figure>
 							<Icon src={SiPrettier} size="3em" className="icons" />
 							<figcaption>Prettier</figcaption>
 						</figure>
 					</a>
 				</span>
-				See more on my <a href="/SimonRenoux.pdf">CV</a>
+				See more on my <a href="/SimonRenoux.pdf" target="_blank" rel="noreferrer">CV</a>
 			</div>
 			<div id="accounts-showcase">
 				<h1>I have accounts there</h1>
 				<h2>Development projects</h2>
 				<span id="accounts">
-					<a href="https://www.github.com/fantomitechno">
+					<a href="https://www.github.com/fantomitechno" target="_blank" rel="noreferrer">
 						<figure>
 							<Icon src={SiGithub} size="3em" className="icons" />
 							<figcaption>Github</figcaption>
 						</figure>
 					</a>
-					<a href="https://git.gay/fantomitechno">
+					<a href="https://git.gay/fantomitechno" target="_blank" rel="noreferrer">
 						<figure>
 							<Icon src={GitGay} size="3em" className="icons" />
 							<figcaption>Git.gay</figcaption>
 						</figure>
 					</a>
-					<a href="https://modrinth.com/user/fantomitechno">
+					<a href="https://modrinth.com/user/fantomitechno" target="_blank" rel="noreferrer">
 						<figure>
 							<Icon src={SiModrinth} size="3em" className="icons" />
 							<figcaption>Modrinth</figcaption>
@@ -193,25 +193,25 @@
 				</span>
 				<h2>Socials & stuff</h2>
 				<span id="accounts">
-					<a href="https://discord.gg/NrnEpamdMc">
+					<a href="https://discord.gg/NrnEpamdMc" target="_blank" rel="noreferrer">
 						<figure>
 							<Icon src={SiDiscord} size="3em" className="icons" />
 							<figcaption>Discord</figcaption>
 						</figure>
 					</a>
-					<a href="https://x.com/fantomitechno">
+					<a href="https://x.com/fantomitechno" target="_blank" rel="noreferrer">
 						<figure>
 							<Icon src={SiX} size="3em" className="icons" />
 							<figcaption>X</figcaption>
 						</figure>
 					</a>
-					<a href="https://twitch.tv/fantomitechno">
+					<a href="https://twitch.tv/fantomitechno" target="_blank" rel="noreferrer">
 						<figure>
 							<Icon src={SiTwitch} size="3em" className="icons" />
 							<figcaption>Twitch</figcaption>
 						</figure>
 					</a>
-					<a href="https://ko-fi.com/fantomitechno">
+					<a href="https://ko-fi.com/fantomitechno" target="_blank" rel="noreferrer">
 						<figure>
 							<Icon src={SiKofi} size="3em" className="icons" />
 							<figcaption>Ko-Fi</figcaption>
@@ -244,11 +244,11 @@
 		max-height: 5rem;
 	}
 
-	@media (min-width: 720px) {
-		.informations::after {
-			display: flex;
-		}
+	.informations {
+		display: flex;
+	}
 
+	@media (min-width: 720px) {
 		.informations > div {
 			float: left;
 			width: 50%;
@@ -257,7 +257,6 @@
 
 	@media (max-width: 720px) {
 		.informations {
-			display: flex;
 			flex-direction: column;
 		}
 		div #accounts-showcase {
