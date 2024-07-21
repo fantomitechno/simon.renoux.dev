@@ -22,7 +22,8 @@
 		SiTwitch,
 		SiKofi,
 		SiPnpm,
-		SiPrettier
+		SiPrettier,
+		SiProtonmail
 	} from 'svelte-icons-pack/si';
 
 	import { GitGay } from '$lib/icons/custom';
@@ -218,6 +219,22 @@
 						</figure>
 					</a>
 				</span>
+				<h2>Mails</h2>
+				<span id="mails">
+					<a href="mailto:simon@renoux.dev" target="_blank" rel="noreferrer">
+						<figure>
+							<Icon src={SiProtonmail} size="3em" className="icons" />
+							<figcaption>simon@renoux.dev</figcaption>
+						</figure>
+					</a>
+
+					<a href="mailto:me@fantomitechno.dev" target="_blank" rel="noreferrer">
+						<figure>
+							<Icon src={SiProtonmail} size="3em" className="icons" />
+							<figcaption>me@fantomitechno.dev</figcaption>
+						</figure>
+					</a>
+				</span>
 			</div>
 		</div>
 	</span>
@@ -225,7 +242,6 @@
 
 <style>
 	span {
-		align-items: left;
 		width: 100%;
 	}
 
@@ -246,27 +262,6 @@
 
 	.informations {
 		display: flex;
-	}
-
-	@media (min-width: 720px) {
-		.informations > div {
-			float: left;
-			width: 50%;
-		}
-	}
-
-	@media (max-width: 720px) {
-		.informations {
-			flex-direction: column;
-		}
-		div #accounts-showcase {
-			order: 1;
-			width: 100%;
-		}
-		div #knowledge-showcase {
-			order: 2;
-			width: 100%;
-		}
 	}
 
 	#knowledge {
@@ -324,5 +319,51 @@
 		margin: 1rem;
 		text-align: center;
 		width: 5rem;
+	}
+
+	#mails {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	#mails a {
+		text-decoration: none;
+		color: var(--text-color);
+	}
+
+	#mails figure {
+		margin: 1rem;
+		text-align: center;
+	}
+
+	@media (min-width: 720px) {
+		.informations > div {
+			float: left;
+			width: 50%;
+		}
+
+		#mails {
+			justify-content: center;
+		}
+	}
+
+	@media (max-width: 720px) {
+		.informations {
+			flex-direction: column;
+		}
+		div #accounts-showcase {
+			order: 1;
+			width: 100%;
+		}
+		div #knowledge-showcase {
+			order: 2;
+			width: 100%;
+		}
+		#mails figure {
+			display: flex;
+			flex-direction: row;
+			gap: 1rem;
+			align-items: center;
+		}
 	}
 </style>
