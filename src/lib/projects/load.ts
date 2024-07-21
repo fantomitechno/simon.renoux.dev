@@ -6,6 +6,7 @@ export type Project = {
   categories: string[]
   post: boolean
   image: boolean
+  url: string
 }
 
 export const fetchProjects = async (tag?: string) => {
