@@ -6,4 +6,5 @@ categories:
   - astro
   - postgres
   - prisma
+  - htmx
 ---

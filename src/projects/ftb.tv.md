@@ -16,3 +16,5 @@ ftb.tv is a project for my twitch channel to have a moderation and utility bot c
 It's divided in two parts: the bot and the dashboard
 
 The bot is writen in TypeScript with [tmi.js](https://github.com/tmijs/tmi.js) while the dashboard is made with [Astro](https://astro.build). The two share a postgres database and interact with it using [Prisma](https://prisma.io/).
+
+The source code of the bot can be found [here](https://git.gay/fantomitechno/ftb.tv) and the dasboard [here](https://git.gay/fantomitechno/ftb.tv-web)
