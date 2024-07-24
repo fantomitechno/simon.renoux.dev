@@ -5,6 +5,7 @@
 	import fantom_halloween from '$lib/images/gallery/fantom_halloween.jpg';
 	import banner from '$lib/images/gallery/banner_coco.gif';
 	import fantom_jason from '$lib/images/gallery/fantom_jason.png';
+	import banned_and_forgotten from '$lib/images/gallery/banned_and_forgotten.png';
 
 	import fantom_girl from '$lib/images/gallery/picrew/fantom_girl.png';
 	import foxboy_fac_chant from '$lib/images/gallery/picrew/foxboy_fac_chant.png';
@@ -43,6 +44,14 @@
 		<h2>Commision by cocoNOTshell</h2>
 		<div class="art-gallery">
 			<img src={banner} alt="My OC and his assistant bot looking at a sunset" />
+		</div>
+		<h2>
+			Commision by <a href="https://faudarzdsayo.carrd.co/" target="_blank" rel="noreferrer">
+				Sayo
+			</a>
+		</h2>
+		<div class="art-gallery">
+			<img src={banned_and_forgotten} alt="Representation of an event, leaving a community" />
 		</div>
 		<h2>Random drawing by isχyromαvro</h2>
 		<div class="art-gallery">
