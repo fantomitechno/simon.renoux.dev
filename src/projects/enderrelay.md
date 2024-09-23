@@ -5,6 +5,7 @@ date: '2024-1-4'
 categories:
   - quilt
   - minecraft
+  - mods
 image: true
 url: https://modrinth.com/mod/enderrelay
 ---

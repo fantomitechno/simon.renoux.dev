@@ -6,6 +6,7 @@ categories:
   - fabric
   - quilt
   - minecraft
+  - mods
 image: true
 url: https://modrinth.com/mod/chat-emotes
 ---
