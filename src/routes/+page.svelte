@@ -29,7 +29,7 @@
 	import { GitGay } from '$lib/icons/custom';
 
 	const descriptions = [
-		// foxboy who...
+		// foxemby who...
 		'eats chocolate (too much)',
 		'drink ice tea',
 		'plays Minecraft',
@@ -60,7 +60,7 @@
 			<hgroup id="titles">
 				<h1>Hi, I'm Simon R.</h1>
 				<h2>aka fantomitechno</h2>
-				a foxboy who {description}
+				a foxemby who {description}
 			</hgroup>
 		</diV>
 		<p>
