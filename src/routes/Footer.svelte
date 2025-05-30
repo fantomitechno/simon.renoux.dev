@@ -11,7 +11,7 @@
 
 <footer>
 	<span>
-		<a href="https://git.gay/fantomitechno/site" target="_blank" rel="noreferrer"> source </a>
+		<a href="https://github.com/fantomitechno/simon.renoux.dev" target="_blank" rel="noreferrer"> source </a>
 		·
 		<a href="https://ko-fi.com/fantomitechno" target="_blank" rel="noreferrer"> money </a>
 	</span>
