@@ -10,7 +10,6 @@ env:
 
 jobs:
     build-and-push-image:
-      runs-on: docker
       steps:
         - name: Checkout repository
           uses: actions/checkout@v4
