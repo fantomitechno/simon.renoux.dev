@@ -8,5 +8,5 @@ categories:
   - minecraft
   - mods
 image: true
-url: https://modrinth.com/mod/chat-emotes
+url: https://modrinth.com/mod/emotes
 ---
