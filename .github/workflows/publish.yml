@@ -2,7 +2,7 @@ name: Publish Docker image
 
 on:
   release:
-    types: [created]
+    types: [published]
 
 env:
   REGISTRY: ghcr.io
@@ -15,7 +15,7 @@ jobs:
         contents: read
         packages: write
       steps:
-        - name: Checkout repository
+        - name: checkout repository
           uses: actions/checkout@v4
         
         - name: Log in to the Container registry
