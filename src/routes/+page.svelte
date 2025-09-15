@@ -9,7 +9,6 @@
 		SiGo,
 		SiSvelte,
 		SiNodedotjs,
-		SiAstro,
 		SiVisualstudiocode,
 		SiIntellijidea,
 		SiGit,
@@ -18,7 +17,7 @@
 		SiGithub,
 		SiModrinth,
 		SiDiscord,
-		SiX,
+		SiBluesky,
 		SiTwitch,
 		SiKofi,
 		SiPnpm,
@@ -136,12 +135,6 @@
 							<figcaption>TypeScript</figcaption>
 						</figure>
 					</a>
-					<a href="https://astro.build/" target="_blank" rel="noreferrer">
-						<figure>
-							<Icon src={SiAstro} size="3em" className="icons" />
-							<figcaption>Astro</figcaption>
-						</figure>
-					</a>
 					<a href="https://svelte.dev/" target="_blank" rel="noreferrer">
 						<figure>
 							<Icon src={SiSvelte} size="3em" className="icons" />
@@ -167,7 +160,9 @@
 						</figure>
 					</a>
 				</span>
-				See more on my <a href="/SimonRenoux.pdf" target="_blank" rel="noreferrer">CV</a>
+				See more on my <a href="/CV_darkEN.pdf" target="_blank" rel="noreferrer">CV</a>
+				(<a href="/CV_darkFR.pdf" target="_blank" rel="noreferrer">FR</a> version &
+				<a href="/CV_lightFR.pdf" target="_blank" rel="noreferrer">light</a> version available too)
 			</div>
 			<div id="accounts-showcase">
 				<h1>I have accounts there</h1>
@@ -200,10 +195,10 @@
 							<figcaption>Discord</figcaption>
 						</figure>
 					</a>
-					<a href="https://x.com/fantomitechno" target="_blank" rel="noreferrer">
+					<a href="https://bsky.app/profile/fantomitechno.dev" target="_blank" rel="noreferrer">
 						<figure>
-							<Icon src={SiX} size="3em" className="icons" />
-							<figcaption>X</figcaption>
+							<Icon src={SiBluesky} size="3em" className="icons" />
+							<figcaption>BlueSky</figcaption>
 						</figure>
 					</a>
 					<a href="https://twitch.tv/fantomitechno" target="_blank" rel="noreferrer">

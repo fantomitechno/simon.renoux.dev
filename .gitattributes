@@ -1,0 +1,4 @@
+# Prevents merge conflicts in Ottotime files
+.ottotime merge=union
+
+*text=auto

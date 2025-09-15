@@ -20,3 +20,6 @@ This got a bit of attention (one of the biggest Celeste content creator made a [
 I'm trying to work on a new version of it where it would be a full on two players adventure: one in Celeste & one in Minecraft
 
 It can be downloaded on [Gamebanana](https://gamebanana.com/mods/538975)
+
+16/09/25 - Edit:\
+I created a video to explain its creation: [video](https://youtu.be/mt8DjQpk-Q8)

@@ -7,4 +7,5 @@ categories:
   - postgres
   - prisma
   - htmx
+  - hosting
 ---
