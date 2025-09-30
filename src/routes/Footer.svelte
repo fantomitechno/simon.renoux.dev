@@ -15,7 +15,7 @@
 		·
 		<a href="https://ko-fi.com/fantomitechno" target="_blank" rel="noreferrer"> money </a>
 	</span>
-	uwu · {quote} · uwu
+	🧡 · {quote} · 🐾
 </footer>
 
 <style>
