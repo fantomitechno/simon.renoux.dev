@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>simon.renoux.dev</title>
+
+  <style>
+    @font-face {
+      font-family: 'Lexend Variable';
+      src: url(fonts/lexend.ttf);
+    }
+
+    :root {
+      --color-bg-0: rgb(40, 38, 36);
+      --color-bg-1: rgb(92, 86, 81);
+      --color-primary: #d06005;
+      --color-secondary: #e2931d;
+      --color-text: rgba(207, 207, 207, 0.9);
+      --color-text-secondary: rgb(168, 53, 188);
+      --color-text-quote: rgba(169, 167, 167, 0.9);
+
+      font-family: 'Lexend Variable', 'Arial';
+      color: var(--color-text);
+    }
+
+
+    body {
+      background-color: var(--color-bg-0);
+      margin: 0;
+    }
+
+    header {
+      height: 2rem;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      max-width: 64rem;
+      margin: 0 auto;
+      border: var(--color-bg-1) solid 2px;
+
+      h1 {
+        margin: 0 0 0 auto;
+        display: block;
+        padding-left: 8px;
+        width: 100%;
+
+        a {
+          font-size: 2rem;
+          color: var(--color-text);
+          text-decoration: none;
+        }
+
+        a:hover {
+          color: var(--color-text-secondary);
+          transition: color 0.2s linear;
+        }
+      }
+
+      nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 2rem;
+        margin-right: calc(8px - 0.5rem);
+        background-color: var(--color-bg-1);
+
+        a {
+          font-size: 1rem;
+          color: var(--color-text);
+          text-decoration: none;
+          padding: 0 0.5rem;
+        }
+
+        a:hover {
+          color: var(--color-secondary);
+          transition: color 0.2s linear;
+        }
+
+        a#selected {
+          color: var(--color-primary);
+          text-decoration: underline;
+        }
+      }
+    }
+
+    footer {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 12px;
+
+      a {
+        font-size: 1rem;
+        color: var(--color-text-secondary);
+        text-decoration: none;
+      }
+
+      a:hover {
+        color: var(--color-secondary);
+        transition: color 0.2s linear;
+      }
+    }
+
+    div#eightyheighbythirtyone {
+      flex: 1;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      padding: 1rem;
+      width: 100%;
+      max-width: 48rem;
+      margin: 0 auto;
+      box-sizing: border-box;
+
+      a {
+        text-decoration: none;
+        padding: 0 0.1rem;
+      }
+
+      img {
+        border-radius: 0;
+      }
+    }
+
+    main {
+      @media (min-width: 720px) {
+        h1 {
+          font-size: 1.4rem;
+        }
+
+        h2 {
+          font-size: 1.2rem;
+        }
+      }
+
+
+      h1,
+      i.special {
+        font-size: 1rem;
+        font-weight: bold;
+        text-align: left;
+        width: fit-content;
+        background-image: linear-gradient(to right, var(--color-secondary), var(--color-secondary));
+        background-position: 0 1.18em;
+        background-repeat: repeat-x;
+        display: inline-block;
+        background-size: 100% 0.16em;
+        padding-bottom: 0.16em;
+      }
+
+      h2 {
+        font-size: 1rem;
+        background-image: linear-gradient(to right, var(--color-text-secondary), var(--color-text-secondary));
+        background-position: 0 1.18em;
+        background-repeat: repeat-x;
+        display: inline-block;
+        background-size: 100% 0.16em;
+        padding-bottom: 0.16em;
+      }
+
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      padding: 1rem;
+      width: 100%;
+      max-width: 56rem;
+      margin: 0 auto;
+      box-sizing: border-box;
+
+      figure {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        img {
+          max-height: 7rem;
+        }
+
+        hgroup {
+          margin-left: 1rem;
+          margin-bottom: 1rem;
+        }
+
+      }
+
+
+      a {
+        font-size: 1rem;
+        color: var(--color-text-secondary);
+      }
+
+      a:hover {
+        color: var(--color-secondary);
+        transition: color 0.2s linear;
+      }
+
+      ul {
+        margin-top: 0.4rem;
+      }
+    }
+
+    img {
+      border-radius: 15%;
+    }
+
+    .quote {
+      color: var(--color-text-quote);
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>
+      <a href="/">
+        Simon R.
+      </a>
+    </h1>
+    <nav>
+      <a href="/" id="selected">about</a>
+      <a href="/gallery">gallery</a>
+      <a href="/contact">contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <figure>
+      <img src="assets/simon.webp" alt="A picture of myself">
+      <hgroup>
+        <h1>Hi, I'm Simon Renoux</h1> <i class="quote">(they/them)</i><br>
+        a student at Polytech Nantes obsessed over Networking.<br>
+        I also go by <i class="special">fantomitechno</i> online.
+      </hgroup>
+    </figure>
+    <details>
+      <summary>The <i>gender</i> pandora box</summary>
+      I am nonbinary and uses <i class="special">they/them</i>. I prefer to look androgyne and more on the feminine
+      side.
+    </details>
+    <section>
+      <h2>Studies</h2>
+      <p>
+        I am a 21-year-old french student at Polytech Nantes. I am in my 5th year of a Computer Science engineering
+        degree.
+        Not only that, but I am following options related to networking, and I am part of my school Networking club, the
+        Club Rezo.
+      </p>
+    </section>
+
+    <section>
+      <h2>Computer networking</h2>
+      <p>
+        I am obsessed with networking. <br>
+        In our school club we are hosting a LAN party for an entire weekend,
+        known as the <a href="https://nantrena.net">Nantarena</a>, I am the network administrator for this event.<br>
+
+        On the side of school, I am also a member of <a href="https://faimaison.net">FAImaison</a>, an associative ISP,
+        and run my own homelab.
+      </p>
+    </section>
+
+    <section>
+      <h2>Homelabing</h2>
+      <p>
+        Since September 2025, I run a raspbery pi with multiple websites and services. In September 2026, I will set up
+        a bigger homelab with 2 servers (named <code>fant0mib0t</code> and <code>Conseil</code>), a router
+        (<code>OpnSense-DeLoreane</code>), a switch (<code>SG500X-Argo3</code>) and an AP. Plan is to be fully out of my
+        ISP, in the end moving to use a fiber connection provided by FAImaison. You can follow whatever I am doing with
+        my homelab on <a href="https://notes.fantomitechno.dev">LeafLet</a> and if you want to take a look at the
+        already existing configuration, check my
+        <a href="https://tangled.org/fantomitechno.dev/dotfiles/blob/servers/IPAM.md">dotfiles</a>.
+        All servers will run on NixOS and the router will use OpnSense.
+      </p>
+    </section>
+
+    <section>
+      <h2>Developpement</h2>
+      <p>
+        With school and personal projects, I learned multiple programming languages:
+      <ul>
+        <li>JavaScript & TypeScript</li>
+        <li>Python</li>
+        <li>Java</li>
+        <li>Go</li>
+        <li>C#</li>
+        <li>C & C++</li>
+      </ul>
+      I develop in VSCodium and InteliJ IDEA. <i class="quote">(second one only for Java code)</i>
+      </p>
+    </section>
+
+    <section>
+      <h2>Modding</h2>
+      <p>
+        I also do some game modding and servers management with Celeste and Minecraft.
+      </p>
+      <p>
+        I was part of the team behind
+        the community Minecraft servers for <a href="https://twitch.tv/mathox">MathoX</a>, where I built mods
+        modifying the server's logic. One of my best projects for this was a server mod to link our
+        bingo minigame to a <a href="https://bingo.mathox1subs.fr">website</a> to follow the game in real time, it was
+        made in collaboration with <a href="https://nalo.dev/">nalo_</a>. I also worked on public Minecraft mods
+        that you can find on my <a href="https://modrinth.com/user/fantomitechno">Modrinth profile</a>
+      </p>
+      <p>
+        On the Celeste side, I created a mod linking Celeste and Minecraft, known as
+        <a href="https://gamebanana.com/mods/538975">The Golden Challange</a>,
+        it is no longer working as I was not planning to pay for the Minecraft server for
+        more than a month but you can find a
+        <a href="https://www.youtube.com/watch?v=7DOppfhz37c">video of a Celeste streamer</a>
+        playing it. <i class="quote">(it broke at the end because I messed up a single line of C#...)</i>
+        I also created a <a href="https://gamebanana.com/mods/628729">map using unusual controls</a>
+        <i class="quote"> (your microphone and your scroll wheel)</i>, you can also find a
+        <a href="https://goldberries.net/submission/91983">video</a> by the same streamer.
+        <i class="quote">(I chose to showcase this video because it is way too funny over the other clears)</i>
+
+        You can find my other Celeste mods on my
+        <a href="https://gamebanana.com/members/3747921">GameBanana profile</a>.
+
+        I also work with <a href="https://celestenet.0x0a.de/">CelesteNet</a>
+        to work on my <a href="https://github.com/fantomitechno/CelesteNet">own server</a> and host it in the end.
+      </p>
+    </section>
+    <section>
+      <h2>Other occupations</h2>
+      <p>
+        On YouTube, I am an editor for <a href="https://www.youtube.com/@ParrotDash">Parrot Dash</a> and I worked on
+        <a href="https://www.youtube.com/@CelesteRecap">the Celeste Recap</a>. I also play Celeste, Hollow Knight and
+        Silksong casually.
+      </p>
+    </section>
+  </main>
+
+  <div id="eightyheighbythirtyone">
+    <a href="https://simon.renoux.dev"><img src="assets/88x31/simon.webp" alt="simon"></a>
+    <a href="https://fantomitechno.dev"><img src="assets/88x31/fantomitechno.webp" alt="fantomitechno"></a>
+    <a href="https://en.pronouns.page/terminology?filter=transgender">
+      <img src="assets/88x31/trans.webp" alt="trans your gender"></a>
+    <a href="https://en.pronouns.page/terminology?filter=nonbinary">
+      <img src="assets/88x31/nonbinary.webp" alt="nonbinary"></a>
+    <a href="https://ellie53.neocities.com"><img src="assets/88x31/ellie53.webp" alt="ellie53"></a>
+    <a href="https://www.polytech-reseau.org"><img src="assets/88x31/polytech.webp" alt="polytech"></a>
+    <a href="https://nanterena.net"><img src="assets/88x31/na.webp" alt="nantarena"></a>
+    <a href="https://www.instagram.com/clubrezonantes"><img src="assets/88x31/rezo.webp" alt="clubrezo"></a>
+    <a href="https://faimaison.net"><img src="assets/88x31/faimaison.webp" alt="faimaison"></a>
+    <a href="https://bsky.app/fantomitechno.dev"><img src="assets/88x31/bluesky.webp" alt="bluesky"></a>
+    <a href="https://tangled.sh/fantomitechno.dev"><img src="assets/88x31/tangled.webp" alt="tangled"></a>
+    <a href="https://modrinth.com/user/fantomitechno"><img src="assets/88x31/modrinth.webp" alt="modrinth"></a>
+    <a href="https://gamebanana.com/members/3747921"><img src="assets/88x31/gamebanana.webp" alt="gamebanana"></a>
+    <a href="https://celestegame.com"><img src="assets/88x31/celeste.webp" alt="celeste"></a>
+    <a href="https://www.hollowknight.com"><img src="assets/88x31/hollowknight.webp" alt="hollowknight"></a>
+    <a href="https://hollowknightsilksong.com"><img src="assets/88x31/silksong.webp" alt="silksong"></a>
+    <a href="https://prismlauncher.org"><img src="assets/88x31/prism.webp" alt="prismlauncher"></a>
+    <a href="https://nixos.org"><img src="assets/88x31/nixos.webp" alt="nixos"></a>
+    <a href="https://caddyserver.com"><img src="assets/88x31/caddy.webp" alt="caddyserver"></a>
+    <a href="https://opnsense.org"><img src="assets/88x31/opnsense.webp" alt="opnsense"></a>
+    <a href="https://docker.com"><img src="assets/88x31/docker.webp" alt="docker"></a>
+    <a href="https://vscodium.com"><img src="assets/88x31/codium.webp" alt="codium"></a>
+    <a href="https://catppuccin.com"><img src="assets/88x31/catpuccin.webp" alt="catpuccin"></a>
+  </div>
+
+  <footer>
+    <a href="https://github.com/fantomitechno/simon.renoux.dev">source</a>
+    🧡 · mreow · 🐾
+  </footer>
+  <script>
+    const date = new Date().toISOString().slice(5, 10);
+    const specialQuotes = {
+      "01-01": "🎉 happy new year 🎉",
+      "09-18": "🎂 yay cake day 🎂",
+      "12-25": "🎄 merry christmas 🎄"
+    }
+    const quotes = [
+      "foxemby is just a meaning of life",
+      "not a furry I swear",
+      "mismatched eyes are just beautiful",
+      "thjsdsgqkhqgsdlhksdgj? yes",
+      "go my gender",
+      "???????????????????????????????????????????????????????????????????",
+      "mreow"
+    ]
+
+    const quote = date in specialQuotes ? specialQuotes[date] : quotes[(Math.random() * quotes.length) | 0];
+
+    const footer = document.getElementsByTagName("footer")[0]
+    if (footer) {
+      footer.innerHTML = footer.innerHTML.replace("mreow", quote)
+    }
+  </script>
+</body>
+
+</html>

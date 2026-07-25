@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>simon.renoux.dev</title>
+
+  <style>
+    @font-face {
+      font-family: 'Lexend Variable';
+      src: url(fonts/lexend.ttf);
+    }
+
+    :root {
+      --color-bg-0: rgb(40, 38, 36);
+      --color-bg-1: rgb(92, 86, 81);
+      --color-primary: #d06005;
+      --color-secondary: #e2931d;
+      --color-text: rgba(207, 207, 207, 0.9);
+      --color-text-secondary: rgb(168, 53, 188);
+      --color-text-quote: rgba(169, 167, 167, 0.9);
+
+      font-family: 'Lexend Variable', 'Arial';
+      color: var(--color-text);
+    }
+
+
+    body {
+      background-color: var(--color-bg-0);
+      margin: 0;
+    }
+
+    header {
+      height: 2rem;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      max-width: 64rem;
+      margin: 0 auto;
+      border: var(--color-bg-1) solid 2px;
+
+      h1 {
+        margin: 0 0 0 auto;
+        display: block;
+        padding-left: 8px;
+        width: 100%;
+
+        a {
+          font-size: 2rem;
+          color: var(--color-text);
+          text-decoration: none;
+        }
+
+        a:hover {
+          color: var(--color-text-secondary);
+          transition: color 0.2s linear;
+        }
+      }
+
+      nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 2rem;
+        margin-right: calc(8px - 0.5rem);
+        background-color: var(--color-bg-1);
+
+        a {
+          font-size: 1rem;
+          color: var(--color-text);
+          text-decoration: none;
+          padding: 0 0.5rem;
+        }
+
+        a:hover {
+          color: var(--color-secondary);
+          transition: color 0.2s linear;
+        }
+
+        a#selected {
+          color: var(--color-primary);
+          text-decoration: underline;
+        }
+      }
+    }
+
+    footer {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 12px;
+
+      a {
+        font-size: 1rem;
+        color: var(--color-text-secondary);
+        text-decoration: none;
+      }
+
+      a:hover {
+        color: var(--color-secondary);
+        transition: color 0.2s linear;
+      }
+    }
+
+    main {
+      @media (min-width: 720px) {
+        h1 {
+          font-size: 1.4rem;
+        }
+
+        h2 {
+          font-size: 1.2rem;
+        }
+      }
+
+
+      h1 {
+        font-size: 1rem;
+        text-align: left;
+        width: fit-content;
+        background-image: linear-gradient(to right, var(--color-secondary), var(--color-secondary));
+        background-position: 0 1.18em;
+        background-repeat: repeat-x;
+        display: inline-block;
+        background-size: 100% 0.16em;
+        padding-bottom: 0.16em;
+      }
+
+      h2 {
+        font-size: 1rem;
+        background-image: linear-gradient(to right, var(--color-text-secondary), var(--color-text-secondary));
+        background-position: 0 1.18em;
+        background-repeat: repeat-x;
+        display: inline-block;
+        background-size: 100% 0.16em;
+        padding-bottom: 0.16em;
+      }
+
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      padding: 1rem;
+      width: 100%;
+      max-width: 56rem;
+      margin: 0 auto;
+      box-sizing: border-box;
+
+
+      a {
+        font-size: 1rem;
+        color: var(--color-text-secondary);
+        text-decoration: none;
+      }
+
+      a:hover {
+        color: var(--color-secondary);
+        transition: color 0.2s linear;
+      }
+
+      .art-gallery {
+        display: flex;
+        flex-wrap: wrap;
+
+        img {
+          max-height: 12rem;
+          margin: 0.3rem;
+          border-radius: 0.7rem;
+
+          @media (max-width: 720px) {
+            margin-left: auto;
+            margin-right: auto;
+          }
+        }
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>
+      <a href="/">
+        Simon R.
+      </a>
+    </h1>
+    <nav>
+      <a href="/">about</a>
+      <a href="/gallery" id="selected">gallery</a>
+      <a href="/contact">contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Art gallery</h1>
+    <p>
+      I commissioned or my friends drawn art of my oc and I always forget where it is, and I want to showcase it too, so
+      this page will load badly because of how many images there is but hey, the drawings are cool :c
+    </p>
+    <section>
+      <h2>Profile pictures by Soleil</h2>
+
+      <div class="art-gallery">
+        <img src="/assets/gallery/fantom_main.jpg" alt="My OC in his normal outfit" />
+        <img src="/assets/gallery/fantom_maid.jpg" alt="My OC in a maid outfit" />
+        <img src="/assets/gallery/fantom_christmas.jpg" alt="My OC ready for christmas" />
+        <img src="/assets/gallery/fantom_halloween.jpg" alt="My OC after a blood bath I guess" />
+      </div>
+      <a href="https://artbysoleil.carrd.co/">carrd.co</a>
+    </section>
+    <section>
+      <h2>Banner by cocoNOTshell</h2> <i class="quote">(they left the internet :c)</i>
+
+      <div class="art-gallery">
+        <img src="/assets/gallery/banner_coco.gif" alt="My OC in his normal outfit" />
+      </div>
+    </section>
+    <section>
+      <h2>Banner by Sayo</h2>
+
+      <div class="art-gallery">
+        <img src="/assets/gallery/banned_and_forgotten.png" alt="My OC in his normal outfit" />
+      </div>
+      <a href="https://faudarzdsayo.carrd.co/">carrd.co</a>
+    </section>
+    <section>
+      <h2>Doodle by isχyromαvro</h2>
+
+      <div class="art-gallery">
+        <img src="/assets/gallery/fantom_jason.png" alt="My OC in his normal outfit" />
+      </div>
+
+    </section>
+  </main>
+
+  <footer>
+    <a href="https://github.com/fantomitechno/simon.renoux.dev">source</a>
+    🧡 · mreow · 🐾
+  </footer>
+  <script>
+    const date = new Date().toISOString().slice(5, 10);
+    const specialQuotes = {
+      "01-01": "🎉 happy new year 🎉",
+      "09-18": "🎂 yay cake day 🎂",
+      "12-25": "🎄 merry christmas 🎄"
+    }
+    const quotes = [
+      "foxemby is just a meaning of life",
+      "not a furry I swear",
+      "mismatched eyes are just beautiful",
+      "thjsdsgqkhqgsdlhksdgj? yes",
+      "go my gender",
+      "???????????????????????????????????????????????????????????????????",
+      "mreow"
+    ]
+
+    const quote = date in specialQuotes ? specialQuotes[date] : quotes[(Math.random() * quotes.length) | 0];
+
+    const footer = document.getElementsByTagName("footer")[0]
+    if (footer) {
+      footer.innerHTML = footer.innerHTML.replace("mreow", quote)
+    }
+  </script>
+</body>
+
+</html>

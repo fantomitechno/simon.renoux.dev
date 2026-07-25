@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>simon.renoux.dev</title>
+
+  <style>
+    @font-face {
+      font-family: 'Lexend Variable';
+      src: url(fonts/lexend.ttf);
+    }
+
+    :root {
+      --color-bg-0: rgb(40, 38, 36);
+      --color-bg-1: rgb(92, 86, 81);
+      --color-primary: #d06005;
+      --color-secondary: #e2931d;
+      --color-text: rgba(207, 207, 207, 0.9);
+      --color-text-secondary: rgb(168, 53, 188);
+      --color-text-quote: rgba(169, 167, 167, 0.9);
+
+      font-family: 'Lexend Variable', 'Arial';
+      color: var(--color-text);
+    }
+
+
+    body {
+      background-color: var(--color-bg-0);
+      margin: 0;
+    }
+
+    header {
+      height: 2rem;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      max-width: 64rem;
+      margin: 0 auto;
+      border: var(--color-bg-1) solid 2px;
+
+      h1 {
+        margin: 0 0 0 auto;
+        display: block;
+        padding-left: 8px;
+        width: 100%;
+
+        a {
+          font-size: 2rem;
+          color: var(--color-text);
+          text-decoration: none;
+        }
+
+        a:hover {
+          color: var(--color-text-secondary);
+          transition: color 0.2s linear;
+        }
+      }
+
+      nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 2rem;
+        margin-right: calc(8px - 0.5rem);
+        background-color: var(--color-bg-1);
+
+        a {
+          font-size: 1rem;
+          color: var(--color-text);
+          text-decoration: none;
+          padding: 0 0.5rem;
+        }
+
+        a:hover {
+          color: var(--color-secondary);
+          transition: color 0.2s linear;
+        }
+
+        a#selected {
+          color: var(--color-primary);
+          text-decoration: underline;
+        }
+      }
+    }
+
+    footer {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 12px;
+
+      a {
+        font-size: 1rem;
+        color: var(--color-text-secondary);
+        text-decoration: none;
+      }
+
+      a:hover {
+        color: var(--color-secondary);
+        transition: color 0.2s linear;
+      }
+    }
+
+    main {
+      @media (min-width: 720px) {
+        h1 {
+          font-size: 1.4rem;
+        }
+
+        h2 {
+          font-size: 1.2rem;
+        }
+      }
+
+
+      h1 {
+        font-size: 1rem;
+        text-align: left;
+        width: fit-content;
+        background-image: linear-gradient(to right, var(--color-secondary), var(--color-secondary));
+        background-position: 0 1.18em;
+        background-repeat: repeat-x;
+        display: inline-block;
+        background-size: 100% 0.16em;
+        padding-bottom: 0.16em;
+      }
+
+      h2 {
+        font-size: 1rem;
+        background-image: linear-gradient(to right, var(--color-text-secondary), var(--color-text-secondary));
+        background-position: 0 1.18em;
+        background-repeat: repeat-x;
+        display: inline-block;
+        background-size: 100% 0.16em;
+        padding-bottom: 0.16em;
+      }
+
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      padding: 1rem;
+      width: 100%;
+      max-width: 56rem;
+      margin: 0 auto;
+      box-sizing: border-box;
+
+      figure {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        img {
+          max-height: 7rem;
+        }
+
+        hgroup {
+          margin-left: 1rem;
+          margin-bottom: 1rem;
+        }
+
+      }
+
+
+      a {
+        font-size: 1rem;
+        color: var(--color-text);
+        text-decoration: underline;
+        text-decoration-color: var(--color-text-secondary);
+      }
+
+      a:hover {
+        color: var(--color-secondary);
+        text-decoration-color: var(--color-secondary);
+        transition: color 0.2s linear;
+      }
+
+      ul {
+        margin-top: 0.4rem;
+      }
+    }
+
+    img {
+      border-radius: 15%;
+    }
+
+    .quote {
+      color: var(--color-text-quote);
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>
+      <a href="/">
+        Simon R.
+      </a>
+    </h1>
+    <nav>
+      <a href="/">about</a>
+      <a href="/gallery">gallery</a>
+      <a href="/contact" id="selected">contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Where to find me</h1>
+    <section>
+      <h2>Where I am active</h2>
+      <ul>
+        <li>
+          Discord: <code>@fantomitechno.dev</code> (<a href="https://discord.gg/NrnEpamdMc">server</a>)
+          <i class="quote">(might become inactive after September 2026)</i>
+        </li>
+        <li>
+          Matrix:
+          <a href="https://matrix.to/#/@fantomitechno:matrix.fantomitechno.dev" target="_blank"
+            rel="noopener noreferrer">
+            <code>@fantomitechno:matrix.fantomitechno.dev</code>
+          </a>
+        </li>
+        <li>
+          BlueSky:
+          <a href="https://bsky.app/fantomitechno.dev" target="_blank" rel="noopener noreferrer">
+            <code>@fantomitechno.dev</code>
+          </a>
+        </li>
+        <li>
+          Mastodon: <i class="quote">Soon:tm:</i>
+        </li>
+      </ul>
+    </section>
+    <section>
+      <h2>Where I might answer</h2>
+      <ul>
+        <li>
+          Email: <code>simon [at] renoux [dot] dev</code>
+        </li>
+        <li>
+          Secondary email: <code>me [at] fantomitechno [dot] dev</code>
+        </li>
+      </ul>
+    </section>
+    <section>
+      <h2>Other socials to find me</h2>
+      <i class="quote">(this is just "fantomitechno" spam)</i>
+      <ul>
+        <li>
+          Tangled: <a href="https://tangled.sh/fantomitechno.dev"><code>fantomitechno.dev</code></a>
+        </li>
+        <li>
+          GitHub: <a href="https://github.com/fantomitechno"><code>fantomitechno</code></a>
+        </li>
+        <li>
+          YouTube: <a href="https://youtube.com/@fantomitechno"><code>fantomitechno</code></a>
+        </li>
+        <li>
+          Twitch: <a href="https://twitch.tv/fantomitechno"><code>fantomitechno</code></a>
+        </li>
+        <li>
+          Modrinth: <a href="https://modrinth.com/user/fantomitechno"><code>fantomitechno</code></a>
+        </li>
+        <li>
+          GameBanana: <a href="https://gamebanana.com/members/3747921"><code>fantomitechno</code></a>
+        </li>
+        <li>
+          goldberries.net: <a href="https://goldberries.net/player/1954"><code>fantomitechno</code></a>
+        </li>
+        <li>
+          Pronouns.page: <a href="https://en.pronouns.page/@fantomitechno"><code>@fantomitechno</code></a>
+        </li>
+        <li>
+          Forum FAImaison:
+          <a href="https://forum.faimaison.net/u/fantomitechno/summary"><code>fantomitechno / Simon</code></a>
+          <i class="quote">I guess</i>
+        </li>
+      </ul>
+    </section>
+
+  </main>
+
+
+  <footer>
+    <a href="https://github.com/fantomitechno/simon.renoux.dev">source</a>
+    🧡 · mreow · 🐾
+  </footer>
+  <script>
+    const date = new Date().toISOString().slice(5, 10);
+    const specialQuotes = {
+      "01-01": "🎉 happy new year 🎉",
+      "09-18": "🎂 yay cake day 🎂",
+      "12-25": "🎄 merry christmas 🎄"
+    }
+    const quotes = [
+      "foxemby is just a meaning of life",
+      "not a furry I swear",
+      "mismatched eyes are just beautiful",
+      "thjsdsgqkhqgsdlhksdgj? yes",
+      "go my gender",
+      "???????????????????????????????????????????????????????????????????",
+      "mreow"
+    ]
+
+    const quote = date in specialQuotes ? specialQuotes[date] : quotes[(Math.random() * quotes.length) | 0];
+
+    const footer = document.getElementsByTagName("footer")[0]
+    if (footer) {
+      footer.innerHTML = footer.innerHTML.replace("mreow", quote)
+    }
+  </script>
+</body>
+
+</html>
