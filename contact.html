@@ -191,6 +191,25 @@
     .quote {
       color: var(--color-text-quote);
     }
+
+    .footnote>span {
+      display: none;
+      position: absolute;
+      text-align: center;
+      transform: translate(-50%) translateY(calc(-100% + 1px));
+      width: max-content;
+      max-width: 20rem;
+      overflow-wrap: break-word;
+      z-index: 1;
+      padding: .25rem;
+      background-color: var(--color-bg-0);
+      border: solid .125rem var(--color-bg-1);
+    }
+
+    .footnote>.under {
+      transform: translate(-50%) translateY(1rem);
+      max-width: 30rem;
+    }
   </style>
 </head>
 
@@ -215,8 +234,20 @@
       <ul>
         <li>
           Discord: <code>@fantomitechno.dev</code> (<a href="https://discord.gg/NrnEpamdMc" target="_blank"
-            rel="noopener noreferrer">server</a>)
-          <i class="quote">(might become inactive after September 2026)</i>
+            rel="noopener noreferrer">server</a>)<br>
+          <i class="quote">might become inactive after September 2026</i>
+          <span class="footnote">
+            <i class="quote">(?)</i>
+            <span class="under">
+              On July 20th, the French parliament voted for a
+              <a href="https://www.senat.fr/dossier-legislatif/ppl25-304.html">
+                modification of the law of June 21st 2024 for the protection of minors against the risks of
+                exposure to social networks usage
+              </a>. This modification will require every one to justify their age when connecting to
+              any social media, using your ID or by connecting using a government run platform, FranceConnect.<br>
+              This law will not protect children but allow a tracking of anyone's online activity.
+            </span>
+          </span>
         </li>
         <li>
           Matrix:
@@ -232,7 +263,11 @@
           </a>
         </li>
         <li>
-          Mastodon: <i class="quote">Soon™</i>
+          Mastodon: <i class="quote">Soon</i><span class="footnote"><i class="quote">(™)</i><span>Still haven't set it
+              up</span></span>
+        </li>
+        <li>
+          Signal: <span class="footnote"><i class="quote">(?)</i><span>Friends can ask for it</span></span>
         </li>
       </ul>
     </section>
@@ -245,6 +280,12 @@
         <li>
           Secondary email: <code>me [at] fantomitechno [dot] dev</code>
         </li>
+        <details>
+          <summary>
+            <i class="quote">(Why are you annoying with your email???)</i>
+          </summary>
+          I don't want to get spammed
+        </details>
       </ul>
     </section>
     <section>
@@ -287,7 +328,10 @@
           Forum FAImaison:
           <a href="https://forum.faimaison.net/u/fantomitechno/summary" target="_blank"
             rel="noopener noreferrer"><code>fantomitechno / Simon</code></a>
-          <i class="quote">I guess</i>
+          <span class="footnote">
+            <i class="quote">(I guess)</i>
+            <span>I am an active member, so I guess you can contact me there???</span>
+          </span>
         </li>
       </ul>
     </section>
@@ -321,6 +365,19 @@
     const footer = document.getElementsByTagName("footer")[0]
     if (footer) {
       footer.innerHTML = footer.innerHTML.replace("mreow", quote)
+    }
+
+    const footnotes = document.getElementsByClassName("footnote");
+    for (const footnote of footnotes) {
+      let footnoteText = footnote.lastElementChild;
+      if (footnoteText) {
+        footnote.addEventListener("mouseenter", () => {
+          footnoteText.style.display = "inline-block";
+        })
+        footnote.addEventListener("mouseleave", () => {
+          footnoteText.style.display = "none";
+        })
+      }
     }
   </script>
 </body>

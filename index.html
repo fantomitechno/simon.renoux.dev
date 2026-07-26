@@ -211,6 +211,20 @@
     .quote {
       color: var(--color-text-quote);
     }
+
+    .footnote>span {
+      display: none;
+      position: absolute;
+      text-align: center;
+      transform: translate(-65%) translateY(2.3rem);
+      width: max-content;
+      max-width: 20rem;
+      overflow-wrap: break-word;
+      z-index: 1;
+      padding: .25rem;
+      background-color: var(--color-bg-0);
+      border: solid .125rem var(--color-bg-1);
+    }
   </style>
 </head>
 
@@ -232,16 +246,19 @@
     <figure>
       <img src="assets/simon.webp" alt="A picture of myself">
       <hgroup>
-        <h1>Hi, I'm Simon Renoux</h1> <i class="quote">(they/them)</i><br>
+        <h1>Hi, I'm Simon Renoux</h1>
+        <span class="footnote">
+          <i class="quote">(they/them)</i>
+          <span>
+            <h2>The <i>gender</i> pandora box</h2><br>
+            I am nonbinary and use <i class="special">they/them</i>. I prefer to look androgyne and more on the feminine
+            side.
+          </span>
+        </span><br>
         a student at Polytech Nantes obsessed over Networking.<br>
         I also go by <i class="special">fantomitechno</i> online.
       </hgroup>
     </figure>
-    <details>
-      <summary>The <i>gender</i> pandora box</summary>
-      I am nonbinary and use <i class="special">they/them</i>. I prefer to look androgyne and more on the feminine
-      side.
-    </details>
     <p>
       If you'd prefer learning about me from my CV, you can find 3 versions:
       French versions (<a href="/cv_fr_light.pdf" target="_blank" rel="noopener noreferrer">Light</a>,
@@ -419,6 +436,19 @@
     const footer = document.getElementsByTagName("footer")[0]
     if (footer) {
       footer.innerHTML = footer.innerHTML.replace("mreow", quote)
+    }
+
+    const footnotes = document.getElementsByClassName("footnote");
+    for (const footnote of footnotes) {
+      let footnoteText = footnote.lastElementChild;
+      if (footnoteText) {
+        footnote.addEventListener("mouseenter", () => {
+          footnoteText.style.display = "inline-block";
+        })
+        footnote.addEventListener("mouseleave", () => {
+          footnoteText.style.display = "none";
+        })
+      }
     }
   </script>
 </body>
