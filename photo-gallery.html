@@ -153,8 +153,8 @@
       flex: 1;
       display: flex;
       flex-direction: column;
+      flex-wrap: wrap;
       padding: 1rem;
-      width: 100%;
       max-width: 56rem;
       margin: 0 auto;
       box-sizing: border-box;
@@ -176,7 +176,7 @@
         flex-wrap: wrap;
 
         img {
-          max-height: 12rem;
+          max-width: 30rem;
           margin: 0.3rem;
           border-radius: 0.7rem;
 
@@ -199,51 +199,63 @@
     </h1>
     <nav>
       <a href="/">about</a>
-      <a href="/gallery" id="selected">oc gallery</a>
-      <a href="/photo-gallery">photo gallery</a>
+      <a href="/gallery">oc gallery</a>
+      <a href="/photo-gallery" id="selected">photo gallery</a>
       <a href="/contact">contact</a>
     </nav>
   </header>
 
   <main>
-    <h1>Art gallery</h1>
-    <p>
-      I commissioned or my friends drawn art of my OC and I always forget where it is, and I want to showcase it too, so
-      this page will load badly because of how many images there is but hey, the drawings are cool :c
-    </p>
     <section>
-      <h2>Profile pictures by Soleil</h2>
+      <h1>Photo gallery</h1>
+      <p>
+        Pictures where I look cool :3
+      </p>
+      <h2>"Nantarena's network admin" by my grand father</h2>
 
       <div class="art-gallery">
-        <img src="/assets/gallery/fantom_main.webp" alt="My OC in his normal outfit" />
-        <img src="/assets/gallery/fantom_maid.webp" alt="My OC in a maid outfit" />
-        <img src="/assets/gallery/fantom_christmas.webp" alt="My OC ready for christmas" />
-        <img src="/assets/gallery/fantom_halloween.webp" alt="My OC after a blood bath I guess" />
+        <img src="/assets/gallery/network_admin.webp" alt="My back, wearing a black sweatshirt with the Nantarena 25.0's logo with written 'Web & Reseau'
+          (Web & Network)" />
       </div>
-      <a href="https://artbysoleil.carrd.co/" target="_blank" rel="noopener noreferrer">carrd.co</a>
+      <h2>My LinkedIn Profile picture by Ylian</h2>
+      <div class="art-gallery">
+        <img src="assets/gallery/linkedin.webp"
+          alt="I am sitting on a table, legs crossed, wearing glasses and a white sweatshirt, looking at my computer on my legs" />
+      </div>
+      <h2>"Shadow walking" by myself</h2>
+      <div class="art-gallery">
+        <img src="assets/gallery/shadow_walking.webp"
+          alt="My shadow while walking with my cat ears headset and I am doing a V sign with my hand" />
+      </div>
     </section>
     <section>
-      <h2>Banner by cocoNOTshell</h2> <i class="quote">(they left the internet :c)</i>
+      <h1>Network gallery</h1>
+      <p>
+        Network setup I worked with
+      </p>
+      <h2>My homelab (2025-2026)</h2>
 
       <div class="art-gallery">
-        <img src="/assets/gallery/banner_coco.webp" alt="My OC in his normal outfit" />
+        <img src="assets/gallery/homelab2025.webp"
+          alt="A raspberry pi with a USB SSD attached on a small table next to a lego Minecraft fox" />
       </div>
-    </section>
-    <section>
-      <h2>Banner by Sayo</h2>
-
+      <h2>Network testing for the Nantarena</h2>
       <div class="art-gallery">
-        <img src="/assets/gallery/banned_and_forgotten.webp" alt="My OC in his normal outfit" />
+        <img src="assets/gallery/network_testing.webp"
+          alt="A laptop, a screen, a computer, a keyboard and a 48P switch on a table in the middle of a hallway" />
       </div>
-      <a href="https://faudarzdsayo.carrd.co/" target="_blank" rel="noopener noreferrer">carrd.co</a>
-    </section>
-    <section>
-      <h2>Doodle by isχyromαvro</h2>
-
+      <h2>My Framework 13's stickers</h2>
       <div class="art-gallery">
-        <img src="/assets/gallery/fantom_jason.webp" alt="My OC in his normal outfit" />
+        <img src="assets/gallery/framework13_stickers.webp"
+          alt="A Framework Laptop with a good amount of stickers (BDE Polytech Pas de La Casse, 'Le binaire c'est pour les ordis !', Cat Ralsei, Nantarena, Dataworld, node.js, Docker, Kubbi, 'You should be able to fix your stuff' and Deep Focus charm from Hollow Knight)" />
       </div>
-
+      <h2>"I set up Graphana 👍"</h2>
+      <div class="art-gallery">
+        <img src="assets/gallery/graphana.webp"
+          alt="I am looking at the camera in our club's room with a big screen showing a Graphana dashboard" />
+        <i class="quote">"Fun" fact: The fact we set up Graphana and Prometheus is theorized to be the reason why the
+          Nantarena 25.0 had no internet access... so funny ahah...</i>
+      </div>
     </section>
   </main>
 
