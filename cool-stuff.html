@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>simon.renoux.dev</title>
+  <meta name="author" content="simon.renoux.dev">
+  <meta name="description" content="Simon R.'s personal website">
+  <meta name="keywords" content="simon,renoux,fantomitechno,fantom,network">
+  <meta name="referrer" content="same-origin">
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+
+  <meta property="og:title" content="simon.renoux.dev">
+  <meta property="og:description" content="Simon R.'s personal website">
+  <meta property="og:url" content="https://simon.renoux.dev/">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="/assets/simon.webp">
+  <meta property="og:site_name" content="simon.renoux.dev">
+  <meta content="#d06005" data-react-helmet="true" name="theme-color" />
+
+
+  <style>
+    @font-face {
+      font-family: 'Lexend Variable';
+      src: url(fonts/lexend.ttf);
+    }
+
+    :root {
+      --color-bg-0: rgb(40, 38, 36);
+      --color-bg-1: rgb(92, 86, 81);
+      --color-primary: #d06005;
+      --color-secondary: #e2931d;
+      --color-text: rgba(207, 207, 207, 0.9);
+      --color-text-secondary: rgb(168, 53, 188);
+      --color-text-quote: rgba(169, 167, 167, 0.9);
+
+      font-family: 'Lexend Variable', 'Arial';
+      color: var(--color-text);
+    }
+
+
+    body {
+      background-color: var(--color-bg-0);
+      margin: 0;
+    }
+
+
+    header {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      max-width: 64rem;
+      margin: 0 auto;
+      border: var(--color-bg-1) solid 2px;
+
+      h1 {
+        margin: 0;
+        padding-left: 8px;
+        height: 2rem;
+
+        a {
+          font-size: 2rem;
+          color: var(--color-text);
+          text-decoration: none;
+        }
+
+        a:hover {
+          color: var(--color-text-secondary);
+          transition: color 0.2s linear;
+        }
+      }
+
+      nav {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        max-width: 50%;
+        margin-right: calc(8px - 0.5rem);
+        border-left: var(--color-bg-1) solid 2px;
+
+        a {
+          font-size: 1rem;
+          color: var(--color-text);
+          text-decoration: none;
+          padding: 0.5rem 0.5rem;
+        }
+
+        a:hover {
+          color: var(--color-secondary);
+          transition: color 0.2s linear;
+        }
+
+        a#selected {
+          color: var(--color-primary);
+          text-decoration: underline;
+        }
+      }
+    }
+
+    footer {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 12px;
+
+      a {
+        font-size: 1rem;
+        color: var(--color-text-secondary);
+        text-decoration: none;
+      }
+
+      a:hover {
+        color: var(--color-secondary);
+        transition: color 0.2s linear;
+      }
+    }
+
+    main {
+      @media (min-width: 720px) {
+        h1 {
+          font-size: 1.4rem;
+        }
+
+        h2 {
+          font-size: 1.2rem;
+        }
+      }
+
+
+      h1 {
+        font-size: 1.2rem;
+        text-align: left;
+        width: fit-content;
+        background-image: linear-gradient(to right, var(--color-secondary), var(--color-secondary));
+        background-position: 0 1.18em;
+        background-repeat: repeat-x;
+        display: inline-block;
+        background-size: 100% 0.16em;
+        padding-bottom: 0.16em;
+      }
+
+      h2 {
+        font-size: 1rem;
+        background-image: linear-gradient(to right, var(--color-text-secondary), var(--color-text-secondary));
+        background-position: 0 1.18em;
+        background-repeat: repeat-x;
+        display: inline-block;
+        background-size: 100% 0.16em;
+        padding-bottom: 0.16em;
+      }
+
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      padding: 1rem;
+      width: 100%;
+      max-width: 56rem;
+      margin: 0 auto;
+      box-sizing: border-box;
+
+      a {
+        font-size: 1rem;
+        color: var(--color-text-secondary);
+        text-decoration: none;
+      }
+
+      a:hover {
+        color: var(--color-secondary);
+        transition: color 0.2s linear;
+      }
+
+      ul {
+        margin-top: 0.4rem;
+      }
+    }
+
+    img {
+      border-radius: 15%;
+    }
+
+    .quote {
+      color: var(--color-text-quote);
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>
+      <a href="/">
+        Simon R.
+      </a>
+    </h1>
+    <nav>
+      <a href="/">about</a>
+      <a href="/cool-stuff" id="selected">cool stuff</a>
+      <a href="/gallery">oc gallery</a>
+      <a href="/photo-gallery">photo gallery</a>
+      <a href="/contact">contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Cool stuff</h1>
+    <p>
+      Cool blogs, cool projects, cool games... This is just a list of stuff I like. In an order decided at random using
+      my brain who overthinked the ranking so it gave up and just put stuff wherever.
+    </p>
+    <section>
+      <h2>Blogs & Cool people</h2>
+      <ul>
+        <li>
+          <a href="https://notnite.com/" target="_blank" rel="noopener noreferrer">notnite</a>: she does cool
+          stuff idk
+        </li>
+        <li>
+          <a href="https://blog.ataxya.net/" target="_blank" rel="noopener noreferrer">
+            Ataxya's Blog</a> (🇫🇷): she does networking and homelabing, it is one of my main inspiration for what I do
+        </li>
+        <li>
+          <a href="https://lafibre.info/routeurs/" target="_blank" rel="noopener noreferrer">
+            La Fibre.info</a> (🇫🇷): The bible to do anything with a custom router instead of your ISP's
+        </li>
+        <li>
+          <a href="https://dataswamp.org/~solene/index.html" target="_blank" rel="noopener noreferrer">
+            Solene'%</a>: More homelabing stuff
+        </li>
+        <li>
+          <a href="https://maia.crimew.gay/" target="_blank" rel="noopener noreferrer">
+            maya <sub>arson crimew</sub></a>: Hacktiviste which does very interesting stuff and very inspiring too!
+        </li>
+        <li>
+          <a href="https://eva.ac/" target="_blank" rel="noopener noreferrer">
+            xyzeva</a>: Security researcher and developper <i class="quote">I know her because we each did a mod
+            implementing a <a href="https://youtu.be/L1i4izl25V4" target="_blank" rel="noopener noreferrer">Kenadian
+              idea</a> (<a href="https://modrinth.com/mod/enderrelay" target="_blank"
+              rel="noopener noreferrer">mine</a>,
+            her's deleted :pensive:)</i>
+        </li>
+        <li>
+          <a href="https://lyra.horse/" target="_blank" rel="noopener noreferrer">
+            lyra rebane</a>: infosec and programming!
+        </li>
+        <li>
+          <a href="https://maddie480.ovh/" target="_blank" rel="noopener noreferrer">Maddie480</a>: Backend dev that
+          does stuff linked to Celeste modding, her <a href="https://github.com/maddie480" target="_blank"
+            rel="noopener noreferrer">github</a> is also full of very interesting projects!
+        </li>
+      </ul>
+    </section>
+    <section>
+      <h2>Friends</h2>
+      <p class="quote"><i>also known as "nerds"</i></p>
+      <ul>
+        <li>
+          <a href="https://gregoirelayet.com/" target="_blank" rel="noopener noreferrer">
+            Grégoire Layet</a>: irl friend that does electronic!
+        </li>
+        <li>
+          <a href="https://nalo.dev/" target="_blank" rel="noopener noreferrer">
+            nalo_</a>: lesbian nerd, does CTF/Osing challenges write up
+        </li>
+        <li>
+          <a href="https://blog.risingsunlight.dev" target="_blank" rel="noopener noreferrer">
+            RisingSunLight's lab</a>: furry nerd, really cool, do homelabing (TW: sometimes french)
+        </li>
+        <li>
+          <a href="https://ellie53.neocities.org/" target="_blank" rel="noopener noreferrer">
+            Ellie53</a>: music nerd, she is a quality control at <a href="https://www.youtube.com/@SiIvaGunner"
+            target="_blank" rel="noopener noreferrer">SiIvaGunner</a>
+        </li>
+        <li>
+          <a href="https://twitch.tv/parrot_dash" target="_blank" rel="noopener noreferrer">
+            Parrot Dash</a>: Celeste streamer I edit for, she's nice... she got one of <a
+            href="https://youtu.be/Vnab7GVdnGM" target="_blank" rel="noopener noreferrer">the hardest deathless
+            challenge in modded Celeste</a>
+        </li>
+      </ul>
+    </section>
+    <section>
+      <h2>Projects I like</h2>
+      <ul>
+        <li>
+          <a href="https://tangled.org/" target="_blank" rel="noopener noreferrer">Tangled</a>: I like decentralized
+          stuff and ATProto works well for that
+        </li>
+        <li>
+          <a href="https://github.com/EverestAPI" target="_blank" rel="noopener noreferrer">EverestAPI</a>: Mod loader
+          for the Celeste game, one of my best modding experience and cool team!
+        </li>
+        <li>
+          <a href="https://celestenet.0x0a.de/" target="_blank" rel="noopener noreferrer">CelesteNet</a>: Multiplayer
+          mod to play with friends to a single player game.
+        </li>
+        <li>
+          <a href="https://www.shodan.io" target="_blank" rel="noopener noreferrer">Shodan</a>: Search engine for
+          Internet-connected devices
+        </li>
+        <li>
+          <a href="https://crt.name" target="_blank" rel="noopener noreferrer">crt.name</a>: Search index for
+          sub domains
+        </li>
+        <li>
+          <a href="https://radar.cloudflare.com/" target="_blank" rel="noopener noreferrer">Cloudflare radar</a>: you
+          can see interconnection between ASNs <i class="quote">idk I am a nerd okay?</i>
+        </li>
+        <li>
+          <a href="https://www.faimaison.net/" target="_blank" rel="noopener noreferrer">FAImaison</a>: associative ISP
+          I am part of!
+        </li>
+        <li>
+          <a href="https://nantarena.net/" target="_blank" rel="noopener noreferrer">Nantarena</a>: Big gaming LAN event
+          organized by a school club I am part of, I am the network admin since the 2025 edition
+        </li>
+        <li>
+          <a href="https://goldberries.net" target="_blank" rel="noopener noreferrer">Goldberries</a>: The list of all
+          top deathless modded runs achieved in Celeste. <i class="quote">This project is really cool because it existed
+            as a Google Spreadsheet at first but one of the team members just went full focus for 2 years and developped
+            this very cool website with features useful for average users and also for the verifier and moderation
+            team</i>
+        </li>
+      </ul>
+    </section>
+    <section>
+      <h2>Video games</h2>
+      <p>
+        Also known as "welcome to my steam library, you are in for a ride"
+      </p>
+      <ul>
+        <li>
+          <a href="https://store.steampowered.com/app/1677310" target="_blank" rel="noopener noreferrer">In Stars And
+            Time</a> by insertdisc5 (31.5h / finished): THE GOAT. Time loop depression RPG with the prettiest non binary
+          person I ever saw. please I want to marry Siffrin so bad, how can I do that, please I need help.
+        </li>
+        <li>
+          <a href="https://store.steampowered.com/app/504230" target="_blank" rel="noopener noreferrer">Celeste</a> by
+          Maddy Makes Games & Extremly Okay Games (752.3h / 193/202 berries): Platformer with cool story and a huge
+          modding scene. I met a lot of friends online around this game!
+        </li>
+        <li>
+          <a href="https://store.steampowered.com/app/1671210" target="_blank" rel="noopener noreferrer">DELTARUNE</a>
+          by Toby Fox (61.1h / 5/7 chapters & 5/5 shadow chrystals): RPG where Toby Fox traumatize you when you decide
+          to not follow the story... oh and Kris hates the player character and want you dead.
+        </li>
+        <li>
+          <a href="https://store.steampowered.com/app/367520" target="_blank" rel="noopener noreferrer">Hollow
+            Knight</a> by Team Cherry (114.6h / 111%): Platformer metroidvania with a ton of lore.
+        </li>
+        <li>
+          <a href="https://store.steampowered.com/app/1030300" target="_blank" rel="noopener noreferrer">Hollow Knight:
+            Silksong</a> by Team Cherry (77.3h / -%): Platformer metroidvania
+          with still a ton of lore, the follow up from HK
+        </li>
+        <li>
+          <a href="https://store.steampowered.com/app/420530" target="_blank" rel="noopener noreferrer">OneShot</a> by
+          Future Cat LLC (10.8h / finished): Puzzle adventure where you get too attached to Niko
+        </li>
+        <li>
+          <a href="http://minecraft.net/" target="_blank" rel="noopener noreferrer">Minecraft</a> by Mojang Studios (too
+          much hours): Sandbox game, my main game for a long time where I still do modding sometimes.
+        </li>
+      </ul>
+    </section>
+
+  </main>
+
+
+  <footer>
+    <span><a href="https://github.com/fantomitechno/simon.renoux.dev">source</a> · <a href="/credits">credits</a> · <a
+        href="/terms">terms</a></span>
+    🧡 · mreow · 🐾
+  </footer>
+  <script>
+    const date = new Date().toISOString().slice(5, 10);
+    const specialQuotes = {
+      "01-01": "🎉 happy new year 🎉",
+      "09-18": "🎂 yay cake day 🎂",
+      "12-25": "🎄 merry christmas 🎄"
+    }
+    const quotes = [
+      "foxemby is just a meaning of life",
+      "not a furry I swear",
+      "mismatched eyes are just beautiful",
+      "thjsdsgqkhqgsdlhksdgj? yes",
+      "go my gender",
+      "???????????????????????????????????????????????????????????????????",
+      "mreow"
+    ]
+
+    const quote = date in specialQuotes ? specialQuotes[date] : quotes[(Math.random() * quotes.length) | 0];
+
+    const footer = document.getElementsByTagName("footer")[0]
+    if (footer) {
+      footer.innerHTML = footer.innerHTML.replace("mreow", quote)
+    }
+
+    const footnotes = document.getElementsByClassName("footnote");
+    for (const footnote of footnotes) {
+      let footnoteText = footnote.lastElementChild;
+      if (footnoteText) {
+        footnote.addEventListener("mouseenter", () => {
+          footnoteText.style.display = "inline-block";
+        })
+        footnote.addEventListener("mouseleave", () => {
+          footnoteText.style.display = "none";
+        })
+      }
+    }
+  </script>
+</body>
+
+</html>
