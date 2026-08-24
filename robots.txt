@@ -43,3 +43,5 @@ User-agent: VelenPublicWebCrawler
 User-agent: Webzio-Extended
 User-agent: YouBot
 Disallow: /
+
+Sitemap: https://simon.renoux.dev/sitemap.xml
