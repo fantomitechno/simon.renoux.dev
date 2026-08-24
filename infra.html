@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>simon.renoux.dev</title>
+  <meta name="author" content="simon.renoux.dev">
+  <meta name="description" content="Simon R.'s personal website">
+  <meta name="keywords" content="simon,renoux,fantomitechno,fantom,network">
+  <meta name="referrer" content="same-origin">
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+
+  <meta property="og:title" content="simon.renoux.dev">
+  <meta property="og:description" content="Simon R.'s personal website">
+  <meta property="og:url" content="https://simon.renoux.dev/">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="/assets/simon.webp">
+  <meta property="og:site_name" content="simon.renoux.dev">
+  <meta content="#d06005" data-react-helmet="true" name="theme-color" />
+
+
+  <style>
+    @font-face {
+      font-family: 'Lexend Variable';
+      src: url(fonts/lexend.ttf);
+    }
+
+    :root {
+      --color-bg-0: rgb(40, 38, 36);
+      --color-bg-1: rgb(92, 86, 81);
+      --color-primary: #d06005;
+      --color-secondary: #e2931d;
+      --color-text: rgba(207, 207, 207, 0.9);
+      --color-text-secondary: rgb(168, 53, 188);
+      --color-text-quote: rgba(169, 167, 167, 0.9);
+
+      font-family: 'Lexend Variable', 'Arial';
+      color: var(--color-text);
+    }
+
+
+    body {
+      background-color: var(--color-bg-0);
+      margin: 0;
+    }
+
+
+    header {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      max-width: 64rem;
+      margin: 0 auto;
+      border: var(--color-bg-1) solid 2px;
+
+      h1 {
+        margin: 0;
+        padding-left: 8px;
+        height: 2rem;
+
+        a {
+          font-size: 2rem;
+          color: var(--color-text);
+          text-decoration: none;
+        }
+
+        a:hover {
+          color: var(--color-text-secondary);
+          transition: color 0.2s linear;
+        }
+      }
+
+      nav {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        max-width: 50%;
+        margin-right: calc(8px - 0.5rem);
+        border-left: var(--color-bg-1) solid 2px;
+
+        a {
+          font-size: 1rem;
+          color: var(--color-text);
+          text-decoration: none;
+          padding: 0.5rem 0.5rem;
+        }
+
+        a:hover {
+          color: var(--color-secondary);
+          transition: color 0.2s linear;
+        }
+
+        a#selected {
+          color: var(--color-primary);
+          text-decoration: underline;
+        }
+      }
+    }
+
+    footer {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 12px;
+
+      a {
+        font-size: 1rem;
+        color: var(--color-text-secondary);
+        text-decoration: none;
+      }
+
+      a:hover {
+        color: var(--color-secondary);
+        transition: color 0.2s linear;
+      }
+    }
+
+    main {
+      @media (min-width: 720px) {
+        h1 {
+          font-size: 1.4rem;
+        }
+
+        h2 {
+          font-size: 1.2rem;
+        }
+      }
+
+
+      h1 {
+        font-size: 1.2rem;
+        text-align: left;
+        width: fit-content;
+        background-image: linear-gradient(to right, var(--color-secondary), var(--color-secondary));
+        background-position: 0 1.18em;
+        background-repeat: repeat-x;
+        display: inline-block;
+        background-size: 100% 0.16em;
+        padding-bottom: 0.16em;
+      }
+
+      h2 {
+        font-size: 1rem;
+        background-image: linear-gradient(to right, var(--color-text-secondary), var(--color-text-secondary));
+        background-position: 0 1.18em;
+        background-repeat: repeat-x;
+        display: inline-block;
+        background-size: 100% 0.16em;
+        padding-bottom: 0.16em;
+      }
+
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      padding: 1rem;
+      width: 100%;
+      max-width: 56rem;
+      margin: 0 auto;
+      box-sizing: border-box;
+
+      a {
+        font-size: 1rem;
+        color: var(--color-text-secondary);
+        text-decoration: none;
+      }
+
+      a:hover {
+        color: var(--color-secondary);
+        transition: color 0.2s linear;
+      }
+
+      ul {
+        margin-top: 0.4rem;
+      }
+
+      figure {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+
+    .quote {
+      color: var(--color-text-quote);
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>
+      <a href="/">
+        Simon R.
+      </a>
+    </h1>
+    <nav>
+      <a href="/">about</a>
+      <a href="/cool-stuff">cool stuff</a>
+      <a href="/gallery">oc gallery</a>
+      <a href="/photo-gallery">photo gallery</a>
+      <a href="/contact">contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>fantomitechno's infrastructure</h1>
+    <p>
+      So I run my own services like this website and others! Let's discuss this!
+      The configuration for all of this can be found in my <a
+        href="https://tangled.org/fantomitechno.dev/dotfiles/tree/servers" target="_blank"
+        rel="noopener noreferrer">dotfiles</a>
+    </p>
+    <section>
+      <h2>Basis</h2>
+      <p>
+        My homelab is built inside my appartment, I own 2 servers, 2 switchs and a router:
+      </p>
+      <ul>
+        <li>
+          <code>Conseil</code> (NAS Server): HP HPE DL60 Gen9 (CPU: Xeon E7-8890 v3, RAM: DDR3 16G, SSD: -, HDD: 2x14T
+          Seagate Exos
+          X16, 4x 10G SFP+)
+        </li>
+        <li>
+          <code>fant0mib0t</code> (Compute server): HP HPE DL60 Gen9 (CPU: 2x Xeon E7-8890 v3, RAM: DDR3 32G, SSD: -, 4x
+          10G SFP+)
+        </li>
+        <li>
+          <code>OpnSense-DeLoreane</code> (Router): HP T620 Plus Thin Client (CPU: AMD GX-420CA, RAM: DDR3 4G, SSD:
+          16GB?, 2x 10G SFP+)
+        </li>
+        <li>
+          <code>CRS309-PortalGun</code> (Core Switch): Mikrotik Switch Cloud CRS309-1G-8S+IN (8x 10G SFP+)
+        </li>
+        <li>
+          <code>SG500X-Argo3</code> (User Switch): Cisco SG250-18-K9 (18x 1G Ethernet, 2 1G SFP)
+        </li>
+      </ul>
+      <p>
+        In France, it is not really frequent to not use your ISP's router... yeah, anyway, I am using my own lmao.
+        For now, my ISP is <a href="https://www.bouyguestelecom.fr" target="_blank" rel="noopener noreferrer">Bouygues
+          Telecomes</a>. But plan is to change for <a href="https://faimaison.net" target="_blank"
+          rel="noopener noreferrer">FAImaison</a>. (associative ISP I am a member of)
+      </p>
+    </section>
+    <section>
+      <h2>Network configuration</h2>
+      <p>
+        So first, I wanted to use something I don't see often, there is 3 ranges of privates IPs:
+        <code>192.168.0.0/16</code>, <code>10.0.0.0/8</code> and <code>172.16.0.0/12</code>. I do not see much of the
+        third range being used in the networks I worked in (for organisations: a lot of <code>10/8</code> because of its
+        enormous range of devices allowed <code>16,777,214</code>, and for residential networks:
+        <code>192.168/16</code>). My network is then <code>172.16.0.0/16</code> (I am skipping 4 bits, to allow me to
+        experiment with <a href="https://dn42.dev">dn42</a> in the futur)
+      </p>
+
+      <p>
+        Along this choice of network, I have 4 subnets with VLANs:
+      </p>
+      <ul>
+        <li>
+          The <b>ADMIN</b> network at <code>172.16.10.0/24</code> using VLAN <code>10</code>, accessible via 802.1X
+          authentificated Ethernet.
+        </li>
+        <li>
+          The <b>ADMIN VPN</b> network at <code>172.16.15.0/24</code> using VLAN <code>15</code>, accessible via
+          Wireguard.
+        </li>
+        <li>
+          The <b>SERVERS</b> network at <code>172.16.20.0/24</code> using VLAN <code>20</code>, accessed with specific
+          SFP+ ports on the Core Switch.
+        </li>
+        <li>
+          The <b>GUEST</b> network at <code>172.16.100.0/24</code> using VLAN <code>100</code>, accessed via Wi-Fi and
+          unauthentified Ethernet.
+        </li>
+      </ul>
+
+      <p>The different hardwares I own are accessible to the following IP addresses:</p>
+      <ul>
+        <li>
+          <code>OpnSense-DeLoreane</code>: this device is accessible on all networks, <code>172.16.10.1</code>,
+          <code>172.16.15.1</code>, <code>172.16.20.1</code> and <code>172.16.100.1</code>
+        </li>
+        <li>
+          <code>CRS309-PortalGun</code>: <code>172.16.20.2</code>
+        </li>
+        <li>
+          <code>Conseil</code>: <code>172.16.20.10</code>
+        </li>
+        <li>
+          <code>fant0mib0t</code>: <code>172.16.20.20</code>
+        </li>
+        <li>
+          <code>SG500X-Argo3</code>: <code>172.16.20.3</code>
+        </li>
+      </ul>
+      <p>They are connected as follow:</p>
+      <figure>
+        <img src="/assets/network.svg" alt="My network connections">
+        <caption>My network</caption>
+      </figure>
+
+      <p>
+        The router is running <a href="https://opnsense.org/" target="_blank" rel="noopener noreferrer">OpnSense</a>.
+        All other servers are running NixOS and the switchs are running the latest (accessible) version of their
+        software.
+      </p>
+
+      <p>
+        Port <code>80</code> and <code>443</code> of <code>fant0mib0t</code> are forwarded from
+        <code>OpnSense-DeLoreane</code> to the Internet allowing my public IP to host my services.
+        Every services is also hosted on the local network of each machine, not even allowing access without going
+        through the reverse proxy (I use <a href="https://caddyserver.com/">Caddy</a> btw)
+      </p>
+    </section>
+    <section>
+      <h2>Services</h2>
+      <p>
+        WIP
+      </p>
+    </section>
+
+  </main>
+
+
+  <footer>
+    <span><a href="https://github.com/fantomitechno/simon.renoux.dev">source</a> · <a href="/credits">credits</a> · <a
+        href="/terms">terms</a></span>
+    🧡 · mreow · 🐾
+  </footer>
+  <script>
+    const date = new Date().toISOString().slice(5, 10);
+    const specialQuotes = {
+      "01-01": "🎉 happy new year 🎉",
+      "09-18": "🎂 yay cake day 🎂",
+      "12-25": "🎄 merry christmas 🎄"
+    }
+    const quotes = [
+      "foxemby is just a meaning of life",
+      "not a furry I swear",
+      "mismatched eyes are just beautiful",
+      "thjsdsgqkhqgsdlhksdgj? yes",
+      "go my gender",
+      "???????????????????????????????????????????????????????????????????",
+      "mreow"
+    ]
+
+    const quote = date in specialQuotes ? specialQuotes[date] : quotes[(Math.random() * quotes.length) | 0];
+
+    const footer = document.getElementsByTagName("footer")[0]
+    if (footer) {
+      footer.innerHTML = footer.innerHTML.replace("mreow", quote)
+    }
+
+    const footnotes = document.getElementsByClassName("footnote");
+    for (const footnote of footnotes) {
+      let footnoteText = footnote.lastElementChild;
+      if (footnoteText) {
+        footnote.addEventListener("mouseenter", () => {
+          footnoteText.style.display = "inline-block";
+        })
+        footnote.addEventListener("mouseleave", () => {
+          footnoteText.style.display = "none";
+        })
+      }
+    }
+  </script>
+</body>
+
+</html>
